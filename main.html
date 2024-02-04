@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head> 
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>UdyogShala</title>
+  
+ 
+  <link href="./images/main.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/variables.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    
+    #result {
+      display: none;
+    }
+    .custom-section {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.5s ease forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+         .custom-collapsible { 
+            cursor: pointer;
+            
+            padding: 12px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+          
+            border-radius: 6px;
+            margin-bottom: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .custom-content collapse1 {
+            padding: 0 12px;
+            display: none;
+            overflow: hidden;
+            
+            border-radius: 6px;
+
+        }
+       
+
+
+
+
+        .container-box {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .video-container {
+      max-width: 60%;
+    }
+    .dropdown-container {
+      max-width: 40%;
+    }
+    .data-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .table td, .table th {
+      padding: 0.75rem;
+    }
+    .decorative-img {
+      max-width: 100%;
+      height: auto;
+    }
+   .videobox{
+   height: 600px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+
+   align-items: center;
+   justify-content: center;
+   padding: 5%;
+
+   }
+   .vedbox{
+    height: 600px;
+   width: 50%;
+ 
+   
+   align-items: flex-start;
+   justify-content: left;
+   
+   
+
+   }
+   .ext{
+    margin-left: 5%;
+
+   }
+
+
+    
+  </style>
+
+
+
+
+ 
+ 
+</head>
+
+
+
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a  class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+       
+        <h1>UdyogShala<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- <li><a class="nav-link scrollto" href="main.html">Home</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="main.html#about">About</a></li> -->
+          <li><a class="nav-link scrollto" href="main.html#services">Services</a></li>
+         <li><a class="nav-link scrollto" href="main.html#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="main.html#contact">Contact us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav><!-- .navbar -->
+
+
+
+
+
+
+
+    </div>
+  </header>
+  
+  <!-- End Header -->
+
+ 
+
+  <main id="main">
+    <section id="cta" class="cta">
+      
+    </section>
+
+
+    <!-- ======= Services Section ======= -->
+    
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+  
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>
+            Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle</p>
+        </div>
+  
+        <div class="row gy-5">
+  
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <a href="#steps"> <img src="assets/img/services-1.jpg"  class="img-fluid" alt=""></a>
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <a href="#steps" class="stretched-link">
+                  <h3>Business Planning Assistance</h3>
+              </a>
+                <p>Craft your roadmap to success with our expert business planning assistance tailored to your startup needs.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+  
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <a href="#finance-faq" class="stretched-link">
+                  <h3>Financial Plan and Guidance</h3>
+                </a>
+                <p>Get personalized financial guidance and robust planning strategies to steer your startup towards sustainable growth.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+  
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <a href="#machinery" class="stretched-link">
+                  <h3>Machinery Operation and Training</h3>
+                </a>
+                <p>Optimize machinery operation efficiency with our tailored solutions for seamless productivity.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+  
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-4.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-bounding-box-circles"></i>
+                </div>
+                <a href="#marketing" class="stretched-link">
+                  <h3>Marketing and Market Research</h3>
+                </a>
+                <p>Get expert guidance in business planning, financial management, and machinery operations for sustainable growth.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+  
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-5.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar4-week"></i>
+                </div>
+                <a href="#profit"  class="stretched-link">
+                  <h3>profit and pricing</h3>
+                </a>
+                <p>Achieve maximum profit and production efficiency with our specialized strategies tailored to your business goals.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+  
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <a href="#Resources"  class="stretched-link">
+                  <h3>Raw Material and Supply Chain Management</h3>
+                </a>
+                <p>Efficient raw material sourcing and supply chain management to optimize production processes.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+  
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="800">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-6.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <a href="#tech" class="stretched-link">
+                  <h3>Technology Integration and maximum production</h3>
+                </a>
+                <p>Incorporate cutting-edge technology solutions to streamline operations and enhance efficiency.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+  
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="900">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <a href="#market"  class="stretched-link">
+                  <h3>Link to  Online Market</h3>
+                </a>
+                <p>Establish direct links to target markets for increased visibility and sales opportunities.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+  
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="1000">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <a href="market" class="stretched-link">
+                  <h3>Expansion and Growth Strategies</h3>
+                </a>
+                <p>Develop tailored expansion plans and growth strategies to seize new opportunities in the market.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+  
+        </div>
+  
+      </div>
+    </section>
+    <!-- end service section -->
+
+
+     <!-- ======= Features Section ======= -->
+     <section id="steps" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row gy-4 d-flex">
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <!-- <i class="bi bi-binoculars color-cyan"></i> -->
+              <h4>1.</h4>
+              <h4>Market Research and Niche Identification</h4>
+            </a>
+          </li><!-- End Tab 1 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <h4>2.</h4>
+              <h4>Legal Compliance and Business Registration</h4>
+            </a>
+          </li><!-- End Tab 2 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <h4>3.</h4>
+              <h4>Business Planning</h4>
+            </a>
+          </li><!-- End Tab 3 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+            <h4>4.</h4>
+              <h4>Supplier Setup and Equipment Acquisition</h4>
+            </a>
+          </li><!-- End Tab 4 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+             <h4>5.</h4>
+              <h4>Product Development and Quality Assurance</h4>
+            </a>
+          </li><!-- End Tab 5 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+             <h4>6</h4>
+              <h4> Branding, Packaging, and Marketing </h4>
+            </a>
+          </li>
+          <!-- End Tab 6 Nav -->
+           
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-7">
+            <h4>7.</h4>
+              <h4>Sales Strategy and Distribution Channels</h4>
+            </a>
+          </li><!-- End Tab 4 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-8">
+           <h4>8.</h4>
+              <h4>Customer Service Excellence</h4>
+            </a>
+          </li><!-- End Tab 5 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-9">
+             <h4>9.</h4>
+              <h4>Continuous Improvement and Growth</h4>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                <h3>Market Research and Niche Identification</h3>
+                <p class="fst-italic">
+                  Conduct thorough research to understand the demand for paper plates in Bangalore, considering factors such as population demographics, consumer behavior, and market trends.
+                  Identify specific niche markets within the paper plate industry, such as eco-friendly plates made from recycled materials, biodegradable options, or plates with custom designs for events.
+                  Analyze competitors in each niche to identify gaps or opportunities for differentiation in your product offerings.</p>
+
+                
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/features-1.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 1 -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Legal Compliance and Business Registration</h3>
+                <p>
+                  Research and understand the legal and regulatory requirements for setting up a paper plate manufacturing business in Bangalore, including zoning regulations, environmental permits, and health and safety standards.
+                obtain necessary licenses and permits from local authorities and government agencies to operate your manufacturing facility legally.
+                 Consult with legal experts or business advisors to ensure full compliance with all applicable laws and regulations.
+                </p>
+                
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-2.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 2 -->
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Business Planning</h3>
+                <p>
+                  Develop a comprehensive business plan outlining your company's vision, mission, and objectives, as well as strategies for achieving them.
+                  Define your unique selling proposition (USP) and competitive advantages, such as high-quality materials, innovative designs, or competitive pricing.
+                  Set specific short-term and long-term goals for your paper plate manufacturing business, including production targets, revenue projections, and market share goals.
+                </p>
+                
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-3.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 3 -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Supplier Setup and Equipment Acquisition</h3>
+                <p>
+                  Research and identify reliable suppliers for paperboard, coatings, and other raw materials required for manufacturing paper plates.
+                  Establish partnerships or negotiate contracts with suppliers to ensure a steady and consistent supply of materials at competitive prices.
+                  Invest in high-quality machinery and equipment for paper plate manufacturing, including plate forming machines, cutting machines, and packaging equipment, ensuring efficiency and productivity in your operations.</p>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-4.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 4 -->
+
+          <div class="tab-pane" id="tab-5">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Product Development and Quality Assurance</h3>
+                <p>Develop prototypes of paper plates in various sizes, shapes, designs, and materials, considering factors such as durability, functionality, and eco-friendliness.
+                  Conduct rigorous testing and quality assurance procedures to ensure that your paper plates meet industry standards and customer expectations for strength, heat resistance, and food safety.
+                  Gather feedback from potential customers, industry experts, and focus groups to refine your paper plate designs and improve product quality.</p>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-5.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 5 -->
+
+          <div class="tab-pane" id="tab-6">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Branding, Packaging, and Marketing</h3>
+                <p>
+                  Develop a strong and distinctive brand identity that reflects the values and qualities of your paper plate manufacturing business, including logo design, color schemes, and brand messaging.
+                  Design visually appealing and functional packaging for your paper plates that enhances their appeal and protects them during transportation and storage.
+                  Implement a comprehensive marketing strategy to promote your paper plates and build brand awareness, including online marketing channels such as social media, search engine optimization (SEO), content marketing, and email campaigns, as well as offline marketing tactics such as trade shows, events, and collaborations with local businesses.                </p>
+               
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-6.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          
+          <!-- End Tab Content 6 -->
+
+          <div class="tab-pane" id="tab-7">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Sales Strategy and Distribution Channels</h3>
+                <p>
+                  Develop a sales strategy that outlines how you will reach and sell to your target customers, including both direct sales channels and distribution partnerships.
+                  Establish direct sales channels through your website, social media platforms, and online marketplaces to reach consumers directly and generate online sales.
+                  Explore partnerships with wholesalers, retailers, and distributors to expand your reach and distribution network, allowing your paper plates to be sold in stores, restaurants, catering businesses, and other outlets.                </p>
+                
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-3.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-8">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Customer Service Excellence</h3>
+                <p>
+                  Prioritize excellent customer service to build trust and loyalty among your customers, including responsive communication, timely order fulfillment, and personalized support.
+                  Implement systems and processes for handling customer inquiries, feedback, and complaints effectively, ensuring that customer concerns are addressed promptly and professionally.
+                  Monitor customer satisfaction levels and continuously seek feedback to identify areas for improvement and enhance the overall customer experience with your paper plates.                </p>
+
+                
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-5.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+            
+
+          <div class="tab-pane" id="tab-9">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Continuous Improvement and Growth</h3>
+                <p>
+                  Regularly evaluate your business performance and market dynamics to identify opportunities for improvement and growth.
+                  Analyze sales data, customer feedback, and market trends to make informed decisions about product development, marketing strategies, and expansion opportunities.
+                  Stay adaptable and responsive to changes in the market landscape, technology advancements, and customer preferences, continually seeking ways to innovate and differentiate your paper plate manufacturing business for sustained success and growth.                </p>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-6.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+
+
+
+
+    <!-- ===== finential plan  ===== -->
+
+    <section id="finance-faq" class="faq" style="background-color: #f8f9fa; padding: 80px 0;">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="text-center mb-5">
+              <h2 class="section-title">Financial Plan and Guidance</h2>
+              <p class="section-description"></p>
+            </div>
+            <div class="accordion" id="faqAccordion">
+
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Tools and Equipment Prices for Candle Making:
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                   <p><b>Melting Pot or Double Boiler:</b>₹500 to ₹2000</p>
+                   <p><b>Thermometer:</b>₹150 to ₹500</p>
+                   <p><b>Pouring Pitcher: </b>₹300 to ₹1000</p>
+                   <p><b>Wick Holder or Wick Bar: </b>₹100 to ₹300</p>
+                   <p><b>Molds: </b>₹200 to ₹1000 (Varies based on size and complexity)</p>
+                   <p><b>Cooling Rack: </b>₹200 to ₹500</p>
+                   <p><b>Wick Trimmer: </b> ₹100 to ₹300</p>
+                   <p><b>Scale: </b>₹500 to ₹2000</p>
+                   <p><b>Stirring Utensils: </b>₹100 to ₹500</p>
+                   <p><b>Heat Source (Stove or Hot Plate): </b>1500 to ₹5000</p>
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Average Investment and Cost for Candle Making Business
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                     <p><b>Equipment and Machinery: </b>₹26,050 to ₹97,100</p>
+                     <p><b>Raw Materials: </b>₹10,000 to ₹20,000</p>
+                     <p><b>Space Rental or Setup Cost (if applicable)</b></p>
+                     <p><b>Registration and Licenses Cost</b></p>
+                     <p><b>Marketing and Packaging Cost</b></p>  
+                     <h3><b>Average Net Cost (Initial Investment): ₹36,050 to ₹117,100</b></h3>
+                  
+                  
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Ongoing Operational Costs
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    <p><b>Raw Materials: </b>₹10,000 to ₹20,000 per month</p>
+                    <p><b>Electricity:</b>: ₹2,000 to ₹5,000 per month</p>
+                    <p><b>Marketing and Promotion: </b>₹5,000 to ₹10,000 per month</p>
+                    <p><b>Miscellaneous Expenses: </b>₹3,000 to ₹7,000 per month</p>
+                    <h3><b>Total Estimated Ongoing Operational Cost: </b> Approximately <b>₹32,000 per month</b></h3>
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Finance
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+
+                    <p><b>Business Loan Options: </b></p>
+                     <p><b>Loan intrest varies from  9% to 16%  based on choosen scheme and bank </b></p>
+                     <p><b>list of banks proivide loans </b></p>
+                     <ul>
+                      <li>HDFC Bank Business Loan</li>
+                     <li>Axis Bank Business Loan:</li>
+                     <li>ICICI Bank Business Loan</li>
+                     <li>Kotak Mahindra Bank Business Loan</li>
+                     <li>IDFC First Bank Business Loan</li>
+                     <li>SBI Business Loan</li>
+                    
+                    </ul>
+                    <i>Before finalizing a loan, carefully review the terms, including interest rates, processing fees, and repayment schedules. Additionally, consider seeking advice from financial experts or consulting with representatives from each bank to tailor the loan to your specific business needs.</i>
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Government Loan Schemes 
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+
+                    <p><b>Pradhan Mantri Mudra Yojana (PMMY):</b>
+                      <ul>
+                          <li>Offers loans up to ₹10 lakh for small businesses, categorized into Shishu (up to ₹50,000), Kishor (up to ₹5 lakhs), and Tarun (up to ₹10 lakhs).</li>
+                          <li>Avail loans through specified banks, NBFCs, and microfinance institutions.</li>
+                      </ul>
+                  </p>
+                  <p><b>Stand-Up India Scheme:</b>
+                      <ul>
+                          <li>Promotes entrepreneurship, providing loans from ₹10 lakhs to ₹1 crore for first-time businesses.</li>
+                          <li>Encourages loans to female borrowers, and funds can be used for starting or expanding businesses.</li>
+                      </ul>
+                  </p>
+                  <p><b>Credit Guarantee Fund Scheme for Micro and Small Enterprises (CGS):</b>
+                      <ul>
+                          <li>Offers collateral-free loans up to ₹2 crores for MSEs without third-party guarantees.</li>
+                          <li>National Credit Guarantee Trustee Company (NCGTC) provides credit guarantee cover, reducing risks for banks.</li>
+                      </ul>
+                  </p>
+                  <p><b>Pradhan Mantri Employment Generation Programme (PMEGP):</b>
+                      <ul>
+                          <li>Credit-linked subsidy scheme promoting self-employment ventures in the micro-enterprise sector.</li>
+                          <li>Facilitates new businesses, providing financial assistance through banks with subsidies ranging from 15% to 35%.</li>
+                      </ul>
+                  </p>
+                  <p><b>Small Industries Development Bank of India (SIDBI) Schemes:</b>
+                      <ul>
+                          <li>SIDBI offers various schemes, including CGTMSE for collateral-free loans and SMILE for manufacturing businesses.</li>
+                          <li>Stand-Up India under SIDBI supports SC/ST and women entrepreneurs with loans between ₹10 lakhs and ₹1 crore.</li>
+                      </ul>
+                  </p>
+                  <p><b>Export Credit Guarantee Corporation (ECGC) Schemes:</b>
+                      <ul>
+                          <li>Provides small business loans for exporters, offering credit insurance against non-payment delays.</li>
+                          <li>Offers pre-shipment and post-shipment finance, facilitating international business expansion.</li>
+                      </ul>
+                  </p>
+                  <p><b>State-Specific Loan Schemes:</b>
+                      <ul>
+                          <li>Many states initiate their loan schemes. For example, TIIC in Tamil Nadu and MSSIDC in Maharashtra offer term loans and financial assistance for small-scale industries.</li>
+                      </ul>
+                  </p>
+                  
+                    
+                   
+                   
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+             
+
+            </div>
+
+          </div>
+
+          
+        </div>
+
+      </div>
+    </section>
+
+      <!-- ===== finential plan  ===== -->
+
+             <!-- ======= Machinery ======= -->
+             <section id="machinery" class="about">
+              <div class="container" data-aos="fade-up">
+            
+                <div class="section-header">
+                  <h2>Machinary Operation and Training</h2>
+                  
+                </div>
+            
+                <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+            
+                  <div class="col-lg-6 ">
+                    <div class="about-video">
+                      <iframe width="100%" height="400" src="https://www.youtube.com/embed/8oJ1OC8Ql7s?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+            
+                  <div class="col-lg-6 align-self-center">
+                   
+            
+                    <!-- Tabs -->
+                    <ul class="nav nav-pills mb-3">
+                      <li class="nav-item"><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Machinery for Candle Making</a></li>
+                      <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#tab2">Candle Making Process</a></li>
+                    
+                    </ul><!-- End Tabs -->
+            
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+            
+                      <div class="tab-pane fade show active" id="tab1">
+                        <!-- Tab 1 Content -->
+                        <h4>Machinery for Candle Making:</h4>
+                        <ol>
+                          <li><strong>Melting Pot or Double Boiler:</strong><br>
+                            A fundamental tool for efficiently melting wax, ensuring a consistent and smooth texture.
+                          </li>
+                          <li><strong>Thermometer:</strong><br>
+                            An indispensable device that monitors the wax temperature, contributing to the precision of the candle-making process.
+                          </li>
+                          <li><strong>Pouring Pitcher:</strong><br>
+                            This specialized tool facilitates the controlled pouring of melted wax into molds, allowing for intricate and detailed candle designs.
+                          </li>
+                          <li><strong>Wick Holder or Wick Bar:</strong><br>
+                            Ensures the proper centering of the wick during the pouring stage, a crucial aspect for an even burn.
+                          </li>
+                          <li><strong>Molds:</strong><br>
+                            Available in various shapes and sizes, molds play a pivotal role in determining the final form of the candles, allowing for creativity and customization.
+                          </li>
+                          <li><strong>Cooling Rack:</strong><br>
+                            After the pouring process, a cooling rack is employed to enable the candles to cool and harden uniformly, contributing to their structural integrity.
+                          </li>
+                          <li><strong>Wick Trimmer:</strong><br>
+                            A precision tool designed for post-production, trimming wicks to the desired length for an optimal burn.
+                          </li>
+                          <li><strong>Scale:</strong><br>
+                            Accurate measurement is paramount in candle making. A reliable scale is essential for measuring wax and fragrance oil, ensuring consistency in each batch.
+                          </li>
+                          <li><strong>Stirring Utensils:</strong><br>
+                            These tools facilitate thorough mixing of wax and additives, ensuring a homogenous mixture and enhancing the quality of the candles.
+                          </li>
+                          <li><strong>Heat Source:</strong><br>
+                            Whether it's a stove or a dedicated hot plate, the heat source is the powerhouse driving the wax-melting process.
+                          </li>
+                        </ol>
+                      </div>
+                      
+            
+                      <div class="tab-pane fade" id="tab2">
+                        <!-- Tab 2 Content -->
+                        <h4>Candle Making Process:</h4>
+                        <ol>
+                          <li><strong>Prepare the Work Area:</strong><br>
+                            Begin with a clean and organized workspace, ensuring a conducive environment for the meticulous craft of candle making.
+                          </li>
+                          <li><strong>Measure Ingredients:</strong><br>
+                            Accurate measurement is the foundation of successful candle making. Weigh and measure wax and fragrance oil precisely.
+                          </li>
+                          <li><strong>Melting Wax:</strong><br>
+                            Utilize a melting pot or double boiler to melt the wax, maintaining a keen eye on the temperature to achieve the desired consistency.
+                          </li>
+                          <li><strong>Adding Fragrance:</strong><br>
+                            Enhance your candles with aromatic notes by carefully incorporating fragrance oil into the melted wax, ensuring a harmonious blend.
+                          </li>
+                          <li><strong>Preparing Molds:</strong><br>
+                            Arrange the molds, strategically placing wicks and securing them with a wick holder to maintain proper alignment during the pouring process.
+                          </li>
+                          <li><strong>Pouring Wax:</strong><br>
+                            Exercise precision as you pour the melted wax into the molds, creating the foundation for the unique shapes and designs of your candles.
+                          </li>
+                          <li><strong>Cooling:</strong><br>
+                            Transfer the molds to a cooling rack, allowing the candles to cool and solidify evenly, a crucial step for the final product's structural integrity.
+                          </li>
+                          <li><strong>Trimming Wicks:</strong><br>
+                            Employ a wick trimmer to cut the wicks to the desired length, ensuring an optimal burn and a polished aesthetic.
+                          </li>
+                          <li><strong>Removing Candles:</strong><br>
+                            Gently release the candles from the molds, unveiling the fruits of your labor.
+                          </li>
+                          <li><strong>Quality Check:</strong><br>
+                            Thoroughly inspect each candle, checking for any imperfections or defects. This step ensures that your creations meet the highest standards.
+                          </li>
+                        </ol>
+                      </div><!-- End Tab 2 Content -->
+                      
+            
+                     
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            </section>
+            
+           
+            
+            <!-- ===== end machinery===== -->
+
+
+
+           
+       <!-- ===== marketing ===== -->
+
+
+            <section id="marketing" class="faq" style="background-color: #f8f9fa; padding: 80px 0;">
+              <div class="container" data-aos="fade-up">
+                <div class="row justify-content-center">
+                  <div class="col-lg-10">
+                    <div class="text-center mb-5">
+                      <h2 class="section-title">Marketing and Market Research </h2>
+                      <p class="section-description"></p>
+                    </div>
+                    <div class="accordion" id="faqAccordion">
+        
+                      <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                            <i class="bi bi-question-circle question-icon"></i>
+                            Where to Sell:
+                          </button>
+                        </h3>
+                        <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                          <div class="accordion-body">
+                            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; background-color: #fff;">
+                              <thead style="background-color: #f2f2f2;">
+                                  <tr>
+                                      <th style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Platform</th>
+                                      <th style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Description</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Online Platforms</td>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">List products on Amazon, Flipkart, Etsy to reach a wide online audience.</td>
+                                  </tr>
+                                  <tr>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Local Markets</td>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Participate in local craft fairs and events in Bengaluru to showcase products to local customers.</td>
+                                  </tr>
+                                  <tr>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Retail Stores</td>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Collaborate with boutique shops, gift stores, and home decor stores for offline sales.</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                          </div>
+                        </div>
+                      </div><!-- # Faq item-->
+        
+                      <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                            <i class="bi bi-question-circle question-icon"></i>
+                            How to Find Customers:
+                          </button>
+                        </h3>
+                        <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                          <div class="accordion-body">
+                            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; background-color: #fff;">
+                              <thead style="background-color: #f2f2f2;">
+                                  <tr>
+                                      <th style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Strategy</th>
+                                      <th style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Description</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Professional Website & E-commerce</td>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Create a professional website with e-commerce functionality to showcase products and facilitate online purchases.</td>
+                                  </tr>
+                                  <tr>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Social Media Marketing</td>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Utilize platforms like Instagram, Facebook, and Pinterest to showcase products, engage with customers, and drive sales through targeted advertising.</td>
+                                  </tr>
+                                  <tr>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Local Events & Networking</td>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Participate in local events and network with potential customers, collaborate with other businesses, and build relationships with influencers to expand reach.</td>
+                                  </tr>
+                                  <tr>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Collaboration with Influencers</td>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Partner with local influencers or bloggers who align with your brand to promote products and reach a wider audience.</td>
+                                  </tr>
+                                  <tr>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Local SEO Optimization</td>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Optimize website content and listings for local search engine optimization to improve visibility in local search results.</td>
+                                  </tr>
+                                  <tr>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Customer Loyalty Programs</td>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Implement loyalty programs to reward repeat customers and encourage brand loyalty through discounts, special offers, or exclusive perks.</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                          
+                          </div>
+                        </div>
+                      </div><!-- # Faq item-->
+        
+                      <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                            <i class="bi bi-question-circle question-icon"></i>
+                            Market Research:
+                          </button>
+                        </h3>
+                        <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                          <div class="accordion-body">
+                            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; background-color: #fff;">
+                              <thead style="background-color: #f2f2f2;">
+                                  <tr>
+                                      <th style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Aspect</th>
+                                      <th style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Description</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Identify Target Market</td>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Analyze customer demographics, preferences, and behavior to identify the ideal target market for your candle products.</td>
+                                  </tr>
+                                  <tr>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Competitor Analysis</td>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Conduct regular research on industry trends and competitors to identify market gaps, stay informed about emerging trends, and differentiate your products effectively.</td>
+                                  </tr>
+                                  <tr>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Customer Feedback</td>
+                                      <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">Gather feedback from customers through surveys, reviews, and direct communication to understand their needs, preferences, and pain points. Use this feedback to improve products and services and enhance customer satisfaction.</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                          </div>
+                        </div>
+                      </div><!-- # Faq item-->
+                        
+                     
+        
+                     
+        
+                    </div>
+        
+                  </div>
+        
+                  
+                </div>
+        
+              </div>
+            </section>
+            
+
+         
+          
+
+
+
+
+        <!-- =====  End marketing ===== -->
+
+
+
+
+        <!-- =====profit  ===== -->
+        <section id="profit">
+          <div class="container">
+            <h2>Net Profit and Time to Recoup</h2>
+            <form id="calculationForm">
+              <div class="form-group">
+                <p><strong>Assumptions:</strong></p>
+  <ul>
+    <li>Initial Investment: ₹36,050 to ₹117,100</li>
+    <li>Net Profit per Candle: ₹7.50</li>
+    <li>Net Amount of Candles Made and Sold per Day: 300</li>
+  </ul>
+                <label for="initialInvestmentRange">Initial Investment Range:</label>
+                <input type="text" class="form-control" id="initialInvestmentRange" placeholder="₹36,050 to ₹117,100" value="₹36,050 to ₹117,100">
+              </div>
+              <div class="form-group">
+                <label for="netProfitPerCandle">Net Profit per Candle (in ₹):</label>
+                <input type="text" class="form-control" id="netProfitPerCandle" placeholder="7.50" value="7.50">
+              </div>
+              <button type="submit" class="btn btn-primary">Calculate</button>
+            </form>
+            
+            <div id="result">
+              <p><strong>Calculations:</strong></p>
+              <ol>
+                <li><strong>Daily Net Profit:</strong></li>
+                <ul>
+                  <li id="dailyProfit"></li>
+                </ul>
+                <li><strong>Time to Recoup Investment:</strong></li>
+                <ul>
+                  <li id="timeToRecoup"></li>
+                </ul>
+              </ol>
+              <p>These calculations provide an estimate of the time required to recoup the initial investment based on the assumed daily net profit from selling 300 candles. Keep in mind that these figures are indicative, and actual results may vary based on market conditions, production efficiency, and other factors. Regular monitoring and adjustments to your business strategy will help ensure accurate projections.</p>
+            </div>
+          </div>
+          
+
+
+
+        </section>
+
+
+         <!-- ===== end profit  ===== -->
+
+
+         <!-- =====Resources===== -->
+
+         <section id="Resources" class="faq" style="background-color: #f8f9fa; padding: 80px 0;">
+          <div class="container" data-aos="fade-up">
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <div class="text-center mb-5">
+                  <h2 class="section-title">Raw Material and Supply Chain Managemen</h2>
+                  <p class="section-description"></p>
+                </div>
+                <div class="row">
+                  <div class="col-md-6"> <!-- Adjusted column width to col-md-6 -->
+                    <div class="accordion" id="faqAccordion">
+                      <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                            <i class="bi bi-question-circle question-icon"></i>
+                            Tools and Equipment Prices for Candle Making:
+                          </button>
+                        </h3>
+                        <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            <div class="card resource-card resource-animated resource-fade-in-up">
+                              <div class="card-body">
+                                <h3 class="card-title resource-card-title text-center">Raw Materials</h3>
+                                <ul class="list-group" id="rawMaterialsList">
+                                  <!-- Data will be dynamically added here -->
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- # Faq item-->
+                    </div>
+                  </div>
+                  <div class="col-md-6"> <!-- Adjusted column width to col-md-6 -->
+                    <div class="accordion" id="faqAccordion">
+                      <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                            <i class="bi bi-question-circle question-icon"></i>
+                            Average Investment and Cost for Candle Making Business
+                          </button>
+                        </h3>
+                        <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            <div class="card resource-card resource-animated resource-fade-in-up">
+                              <div class="card-body">
+                                <h3 class="card-title resource-card-title text-center">Supply Chain Management</h3>
+                                <ul class="list-group" id="supplyChainList">
+                                  <!-- Data will be dynamically added here -->
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- # Faq item-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        
+
+
+
+
+
+
+          <!-- ===== End Resources===== -->
+
+
+          
+
+
+
+          <!-- ===== Tech===== -->
+
+          <section id="tech">
+            <div class="container">
+              <div class="text-center mb-5">
+                <h2 class="section-title">technology integration and maximum production</h2>
+                <p class="section-description"></p>
+              </div>
+              
+              <div class="custom-section">
+                  <button id="btn1" class="custom-collapsible">1. Fully Automatic Candle Making Machines</button>
+                  <div id="content1" class="custom-content collapse ">
+                      <p>Example: Invest in machines like the "Autocandle Pro 5000" or "TechMelt MaxX" equipped with automated wax melting, pouring, and molding capabilities.</p>
+                      <p>Automated machines reduce manual labor and increase production efficiency.</p>
+                  </div>
+              </div>
+              <div class="custom-section">
+                  <button id="btn2" class="custom-collapsible">2. Quality Control Systems</button>
+                  <div id="content2" class="custom-content collapse">
+                      <p>Example: Implement automated visual inspection systems using cameras and sensors, such as those provided by companies like Cognex or Keyence.</p>
+                      <p>Automated quality control ensures consistent product quality and reduces defects.</p>
+                  </div>
+              </div>
+              <div class="custom-section">
+                  <button id="btn3" class="custom-collapsible">3. Inventory Management Software</button>
+                  <div id="content3" class="custom-content collapse">
+                      <p>Example: Utilize inventory management software like Zoho Inventory or TradeGecko to efficiently track raw material levels and manage stock.</p>
+                      <p>Effective inventory management prevents stockouts and reduces excess inventory.</p>
+                  </div>
+              </div>
+              <div class="custom-section">
+                  <button id="btn4" class="custom-collapsible">4. E-Commerce Website</button>
+                  <div id="content4" class="custom-content collapse">
+                      <p>Example: Develop a user-friendly e-commerce website using platforms like Shopify or Magento, customized to showcase your candle products.</p>
+                      <p>A well-designed website enhances customer experience and boosts online sales.</p>
+                  </div>
+              </div>
+              <div class="custom-section">
+                  <button id="btn5" class="custom-collapsible">5. Online Marketplace Presence</button>
+                  <div id="content5" class="custom-content collapse">
+                      <p>Example: List your candles on popular online marketplaces such as Amazon, Flipkart, or Etsy to broaden your customer base.</p>
+                      <p>Online marketplaces provide access to a large audience and increase sales opportunities.</p>
+                  </div>
+              </div>
+              <div class="custom-section">
+                  <button id="btn6" class="custom-collapsible">6. Digital Marketing</button>
+                  <div id="content6" class="custom-content collapse">
+                      <p>Example: Implement digital marketing strategies using platforms like Facebook Ads Manager or Google Ads to target audiences in Bengaluru interested in candles.</p>
+                      <p>Effective digital marketing increases brand visibility and drives traffic to your website.</p>
+                  </div>
+              </div>
+              <div class="custom-section">
+                  <button id="btn7" class="custom-collapsible">7. Customer Relationship Management (CRM) Software</button>
+                  <div id="content7" class="custom-content collapse">
+                      <p>Example: Utilize CRM software such as HubSpot or Salesforce to manage customer interactions and enhance customer relationships.</p>
+                      <p>CRM systems help in organizing customer data and improving customer satisfaction.</p>
+                  </div>
+              </div>
+              <div class="custom-section">
+                  <button id="btn8" class="custom-collapsible">8. Payment Gateways</button>
+                  <div id="content8" class="custom-content collapse">
+                      <p>Example: Integrate secure payment gateways like Razorpay or Paytm on your website to facilitate smooth and secure transactions.</p>
+                      <p>Secure payment gateways build customer trust and ensure safe online transactions.</p>
+                  </div>
+              </div>
+              <div class="custom-section">
+                  <button id="btn9" class="custom-collapsible">9. Order Fulfillment System</button>
+                  <div id="content9" class="custom-content collapse">
+                      <p>Example: Use order fulfillment systems like Shiprocket or ShipStation to streamline the order processing and delivery process.</p>
+                      <p>Efficient order fulfillment ensures timely delivery and enhances customer satisfaction.</p>
+                  </div>
+              </div>
+              <div class="custom-section">
+                  <button id="btn10" class="custom-collapsible">10. Data Analytics Tools</button>
+                  <div id="content10" class="custom-content collapse">
+                      <p>Example: Implement Google Analytics or Kissmetrics to analyze customer behavior, preferences, and website traffic.</p>
+                      <p>Data analytics tools provide valuable insights for strategic decision-making and business growth.</p>
+                  </div>
+              </div>
+              <div class="custom-section">
+                  <button id="btn11" class="custom-collapsible">11. Customer Reviews and Feedback Platform</button>
+                  <div id="content11" class="custom-content collapse">
+                      <p>Example: Integrate platforms like Trustpilot or Yotpo to encourage and display customer reviews on your website.</p>
+                      <p>Customer reviews build trust, credibility, and influence purchase decisions.</p>
+                  </div>
+              </div>
+              <div class="custom-section">
+                  <button id="btn12" class="custom-collapsible">12. Mobile App</button>
+                  <div id="content12" class="custom-content collapse">
+                      <p>Example: Develop a mobile app for your candle business using platforms like Appy Pie or Hire Mobile App Developers.</p>
+                      <p>A mobile app enhances user engagement and provides a convenient shopping experience.</p>
+                  </div>
+              </div>
+              <div class="custom-section">
+                  <button id="btn13" class="custom-collapsible">13. Track and Trace Systems</button>
+                  <div id="content13" class="custom-content collapse">
+                      <p>Example: Implement track and trace systems with technologies like RFID or QR codes to monitor product movement. Platforms like TraceLink provide comprehensive traceability solutions.</p>
+                      <p>Track and trace systems ensure product authenticity, transparency, and supply chain visibility.</p>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+
+
+          </section>
+               
+
+           
+
+           <!-- =====  End Tech===== -->
+
+          <section id="market">
+           <div class="container text-center">
+            <h1></h1>
+          </div>
+
+
+           <div class="container text-center">
+            <h1 style="margin-bottom: 80px;">Link to Online Market</h1>
+          </div>
+          
+          
+          <div class="videobox">
+            <div class="vedbox">
+              <iframe width="90%" height="400" src="https://www.youtube.com/embed/qLUhvBAtS4I" frameborder="0" allowfullscreen></iframe>
+            </div>
+  
+    
+            <div class="vedbox ext">
+              <iframe width="90%" height="400" src="https://www.youtube.com/embed/ESqfVNZTUDw" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+          </div>
+        
+          
+          </section>
+          
+    
+    
+         
+   
+   
+   
+   
+   
+    
+   
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+    
+        <div class="section-header text-center">
+          <h2>Contact Us</h2>
+        </div>
+    
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form action="" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+    
+        </div>
+    
+      </div>
+    </section><!-- End Contact Section -->
+    <!-- End Contact Section -->
+
+
+  </main><!-- End #main -->
+
+ 
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+ 
+
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./mainpage.js"></script>
+
+</body>
+
+</html>
