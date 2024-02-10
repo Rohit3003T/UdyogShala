@@ -87,3 +87,9 @@ document.getElementById('calculationForm').addEventListener('submit', function(e
       }
     });
   }
+
+  function showSentMessage() {
+    event.preventDefault(); // Prevent default form submission
+    var sentMessage = document.getElementById('sent-message');
+    sentMessage.style.display = 'block'; // Display the "Your message has been sent" message
+  }

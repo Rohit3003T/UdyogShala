@@ -1,0 +1,202 @@
+#result {
+    display: none;
+  }
+  .custom-section {
+          background-color: #fff;
+          padding: 15px;
+          margin-bottom: 15px;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          animation: fadeInUp 0.5s ease forwards;
+      }
+      @keyframes fadeInUp {
+          from {
+              opacity: 0;
+              transform: translateY(20px);
+          }
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+       .custom-collapsible { 
+          cursor: pointer;
+          
+          padding: 12px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 16px;
+        
+          border-radius: 6px;
+          margin-bottom: 8px;
+          transition: background-color 0.3s ease;
+      }
+      .custom-content collapse1 {
+          padding: 0 12px;
+          display: none;
+          overflow: hidden;
+          
+          border-radius: 6px;
+
+      }
+     
+
+
+
+
+      .container-box {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .video-container {
+    max-width: 60%;
+  }
+  .dropdown-container {
+    max-width: 40%;
+  }
+  .data-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .table td, .table th {
+    padding: 0.75rem;
+  }
+  .decorative-img {
+    max-width: 100%;
+    height: auto;
+  }
+ .videobox{
+ height: 600px;
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+
+ align-items: center;
+ justify-content: center;
+ padding: 5%;
+
+ }
+ .vedbox{
+  height: 600px;
+ width: 50%;
+
+ 
+ align-items: flex-start;
+ justify-content: left;
+ 
+ 
+
+ }
+ .ext{
+  margin-left: 5%;
+
+ }
+ @keyframes zoomIn {
+from {
+  opacity: 0;
+  transform: scale(0.5);
+}
+to {
+  opacity: 1;
+  transform: scale(1);
+}
+}
+
+.features .tab-pane {
+animation: zoomIn 0.5s ease-in-out;
+}
+/* Style for the custom-section container */
+.custom-section {
+margin-bottom: 20px;
+}
+
+/* Style for the collapsible button */
+.custom-collapsible {
+background-color: #f8f9fa; /* Light gray background */
+border: none;
+border-radius: 5px;
+color: #333; /* Dark text color */
+cursor: pointer;
+padding: 10px 20px;
+text-align: left;
+width: 100%;
+}
+
+/* Style for the collapsible content */
+.custom-content {
+background-color: #fff; /* White background */
+border-radius: 5px;
+display: none; /* Hide content by default */
+padding: 20px;
+}
+
+/* Style for the collapsed content */
+.collapse {
+display: block; /* Show content when expanded */
+}
+
+/* Style for the active button (when content is expanded) */
+.custom-collapsible.active {
+background-color: #e9ecef; /* Lighter gray background when active */
+}
+
+.contact-form {
+background-color: #f8f9fa;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+width: 100%;
+padding: 12px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.contact-form textarea {
+height: 150px;
+}
+
+.contact-form button {
+padding: 12px 30px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+background-color: #0056b3;
+}
+
+.sent-message {
+margin-top: 20px;
+padding: 10px;
+background-color: #28a745;
+color: #fff;
+border-radius: 5px;
+display: none;
+}
+.user-icon {
+      font-size: 30px; /* Adjust size as needed */
+      font-weight: bold;
+      margin-left: 20px;
+      transition: transform 0.3s ease-in-out;
+  }
+
+  /* Hover effect */
+  .user-icon:hover {
+      transform: scale(1.1); /* Increase size on hover */
+      color:blue; /* Change color on hover */
+      cursor: pointer; /* Change cursor to pointer on hover */
+  }

@@ -24,11 +24,13 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
   
   <link href="assets/css/variables.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="./chatbot.css">
 
     <style>
       .service-item {
@@ -40,6 +42,72 @@
       height: 100%;
       object-fit: cover;
     }
+    .btn-login {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px; 
+}
+
+.contact-form {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.sent-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+  display: none;
+}
+.contact{
+
+
+  animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+
+}
+
+
+
+
+
     </style>
 
 
@@ -59,33 +127,30 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top" data-scrollto-offset="0">
     <div class="container-fluid d-flex align-items-center justify-content-between">
-
       <a  class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-       
         <h1>UdyogShala<span>.</span></h1>
       </a>
-
+  
       <nav id="navbar" class="navbar">
         <ul>
-
-            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-
-          </p>
-
-       
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-        
-         
-          
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
-
-      <a class="btn-getstarted scrollto" href="userdetails.html">Get Started</a>
-
+  
+      <!-- Move the "Login" button next to "Get Started" -->
+      <div>
+        <a class="btn-getstarted scrollto" href="userdetails.html">Get Started</a>
+        <a class="btn-login scrollto" href="login.html">Login</a>
+      </div>
     </div>
-  </header><!-- End Header -->
+  </header>
+  
+    
+
+  <!-- End Header -->
 
   <section id="hero-animated" class="hero-animated d-flex align-items-center">
     <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
@@ -149,7 +214,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+                <img src="./images/machine.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -166,7 +231,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-4.jpg" class="img-fluid" alt="">
+                <img src="./images/research.jpeg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -183,14 +248,14 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-5.jpg" class="img-fluid" alt="">
+                <img src="./images/profit.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-calendar4-week"></i>
                 </div>
                 <a href="userdetails.html"  class="stretched-link">
-                  <h3>Maximum Profit and Production</h3>
+                  <h3>Profit and Pricing</h3>
                 </a>
                 <p>Achieve maximum profitability and production efficiency with our specialized strategies tailored to your business goals.</p>
               </div>
@@ -200,7 +265,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+                <img src="./images/raw.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -217,7 +282,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="800">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-6.jpg" class="img-fluid" alt="">
+                <img src="./images/tech.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -234,7 +299,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="900">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+                <img src="./images/market.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -251,7 +316,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="1000">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+                <img src="./images/growth.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -269,45 +334,66 @@
   
       </div>
     </section>
+
+    <!-- ====== chatbot ====== -->
+
+  <section id="chatbot" class="chatbot">
+
+    <!-- Chatbot Button -->
+    <a href="#" class="chatbot-button" onclick="toggleChatbot()">
+      <img src="./images/chatbot.png" alt="">
+      ASK ME
+    </a>
+  
+    <!-- Chatbot Container -->
+    <div class="chat-container" id="chatbot-container">
+      <div class="chat-icon"></div>
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="suggestion-container" id="suggestion-container"></div>
+      <input type="text" id="user-input" placeholder="Type your message..." style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin: 0 10px; font-size: 14px; box-sizing: border-box; position: relative; bottom: 0;">
+    </div>
+  
+  </section>
+  
+  <!-- ======  End chatbot ====== -->
        
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
-    
         <div class="section-header text-center">
           <h2>Contact Us</h2>
         </div>
-    
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <form action="" method="post" role="form" class="php-email-form">
+            <form role="form" onsubmit="showSentMessage()" class="contact-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
-              <div class="form-group mt-3">
+              <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
-              <div class="form-group mt-3">
+              <div class="form-group">
                 <textarea class="form-control" name="message" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary">Send Message</button>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="my-3">
+               
+                <div class="error-message"></div>
+                <div class="sent-message" id="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+              </div>
             </form>
           </div><!-- End Contact Form -->
-    
         </div>
-    
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    
     <!-- End Contact Section -->
 
 
@@ -320,6 +406,17 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="./chatbot.js"></script>
+  <script>
+
+
+  
+    function showSentMessage() {
+      event.preventDefault(); // Prevent default form submission
+      var sentMessage = document.getElementById('sent-message');
+      sentMessage.style.display = 'block'; // Display the "Your message has been sent" message
+    }
+  </script>
 
 </body>
 

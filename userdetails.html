@@ -91,18 +91,21 @@
       <a  class="logo d-flex align-items-center scrollto me-auto me-lg-0">
         <h1>UdyogShala<span>.</span></h1>
       </a>
-
-      <!-- Navbar -->
+  
       <nav id="navbar" class="navbar">
         <ul>
-          <!-- Add or modify links as needed -->
           <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-         
-          <li><a class="nav-link scrollto" href="index.html#services"></a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact"></a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
+
+      <!-- Move the "Login" button next to "Get Started" -->
+      <div>
+       
+        <a class="btn-login scrollto" href="login.html">Login</a>
+      </div>
     </div>
   </header><!-- End Header -->
 
@@ -119,21 +122,28 @@
       </div>
       <div class="mb-3">
         <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" required>
-    </div>
+        <input type="password" class="form-control" id="password" required >
+      </div>
+      <div class="mb-3">
+        <label for="confirm-password" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="confirm-password" required>
+      </div>
+      <div id="password-error" class="text-danger" style="display: none;">Passwords do not match!</div>
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" required>
+        <input type="email" class="form-control" id="email" >
     </div>
 
       <div class="mb-3">
           <label for="age" class="form-label">Age</label>
-          <input type="number" class="form-control" id="age" required>
+          <input type="number" class="form-control" id="age" >
       </div>
       <div class="mb-3">
-          <label for="location" class="form-label">Location</label>
-          <input type="text" class="form-control" id="location" required>
-      </div>
+        <label for="location" class="form-label">Location</label>
+        <input type="text" class="form-control" id="location" >
+        <small id="location-error" class="text-danger" style="display:none;">Our service is only available in Bengaluru.</small>
+    </div>
+    
       
       
 
@@ -236,8 +246,15 @@
 
   <section id="featured-services" class="featured-services">
     <div class="container">
+      <!-- Heading -->
+      <div class="row mb-4">
+        <div class="col text-center">
+          <h2 class="section-title">Few Business Suggestions For You</h2>
+        </div>
+      </div>
+      <!-- End Heading -->
+  
       <div class="row gy-4">
-        
         <!-- Add more service items as needed -->
   
         <!-- Service items from the second section -->
@@ -245,7 +262,7 @@
           <div class="service-item position-relative">
             <div class="icon"><i class="bi bi-activity icon"></i></div>
             <h4><a href="./main.html" class="stretched-link">Paper plate manufacturing</a></h4>
-            <p>Unlock your entrepreneurial spirit! Start a lucrative venture in paper plate manufacturing today. Embrace sustainability, innovation, and profitability. Join the eco-friendly revolution and create a lasting impact while earning profits."</p>
+            <p>Unlock your entrepreneurial spirit! Start a lucrative venture in paper plate manufacturing today. Embrace sustainability, innovation, and profitability. Join the eco-friendly revolution and create a lasting impact while earning profits.</p>
           </div>
         </div><!-- End Service Item -->
   
@@ -256,19 +273,53 @@
             <p>Illuminate your path to success with candle manufacturing! Harness creativity, fragrance, and ambiance to craft exquisite candles. Ignite passion, profit, and purpose in a booming market. Start your luminous journey now</p>
           </div>
         </div><!-- End Service Item -->
-  
-  
       </div>
     </div>
+    
   </section>
-  <script>
-    document.getElementById('user-details-form').addEventListener('submit', function(event) {
-      event.preventDefault();
+  
+
+
+
+<script>
+  document.getElementById('location').addEventListener('input', function(event) {
+        var locationInput = event.target.value.toLowerCase();
+        var locationError = document.getElementById('location-error');
+
+        // Check if the input is not Bengaluru
+        if (locationInput !== 'bengaluru') {
+            locationError.style.display = 'block';
+        } else {
+            locationError.style.display = 'none';
+        }
+    });
+ 
+  document.getElementById('user-details-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirm-password').value;
+    var passwordError = document.getElementById('password-error');
+
+    // Check if passwords match
+    if (password !== confirmPassword) {
+      passwordError.style.display = 'block';
+      // Hide the new section if passwords don't match
+      document.getElementById('featured-services').style.display = 'none';
+      document.querySelector('.success-message').style.display = 'none';
+  
+    } else {
+      // Reset error message if passwords match
+      passwordError.style.display = 'none';
+
+      // Show the new section only if passwords match
       document.getElementById('featured-services').style.display = 'block';
       document.querySelector('.success-message').style.display = 'block';
       window.location.href = '#featured-services'; // Scroll to the service section
-    });
-  </script>
+    }
+  });
+</script>
+
+  
 
 
   
@@ -283,6 +334,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="./detail.js"></script>
 
 </body>
 

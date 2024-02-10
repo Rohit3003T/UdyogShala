@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UdyogShala</title>
+ 
+
+   <link rel="stylesheet" href="./chatbot.css">
+</head>
+
+<body>
+
+  <!-- ====== chatbot ====== -->
+
+  <section id="chatbot">
+
+  <!-- Chatbot Button -->
+  <a href="#" class="chatbot-button" onclick="toggleChatbot()">
+    <img src="./images/chatbot.png" alt="">
+    ASK ME
+  </a>
+
+  <!-- Chatbot Container -->
+  <div class="chat-container" id="chatbot-container">
+    <div class="chat-icon"></div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="suggestion-container" id="suggestion-container"></div>
+    <input type="text" id="user-input" placeholder="Type your message..." style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin: 0 10px; font-size: 14px; box-sizing: border-box; position: relative; bottom: 0;">
+  </div>
+
+</section>
+
+<!-- ======  End chatbot ====== -->
+
+  <script src="./chatbot.js"></script>
+</body>
+
+</html>

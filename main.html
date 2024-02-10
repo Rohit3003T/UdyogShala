@@ -21,110 +21,13 @@
   <link href="assets/css/variables.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    
-    #result {
-      display: none;
-    }
-    .custom-section {
-            background-color: #fff;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            animation: fadeInUp 0.5s ease forwards;
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-         .custom-collapsible { 
-            cursor: pointer;
-            
-            padding: 12px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 16px;
-          
-            border-radius: 6px;
-            margin-bottom: 8px;
-            transition: background-color 0.3s ease;
-        }
-        .custom-content collapse1 {
-            padding: 0 12px;
-            display: none;
-            overflow: hidden;
-            
-            border-radius: 6px;
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="./chatbot.css">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-        }
-       
-
-
-
-
-        .container-box {
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 30px;
-    }
-    .video-container {
-      max-width: 60%;
-    }
-    .dropdown-container {
-      max-width: 40%;
-    }
-    .data-container h2 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-    }
-    .table td, .table th {
-      padding: 0.75rem;
-    }
-    .decorative-img {
-      max-width: 100%;
-      height: auto;
-    }
-   .videobox{
-   height: 600px;
-   width: 100%;
-   display: flex;
-   flex-direction: row;
-
-   align-items: center;
-   justify-content: center;
-   padding: 5%;
-
-   }
-   .vedbox{
-    height: 600px;
-   width: 50%;
- 
-   
-   align-items: flex-start;
-   justify-content: left;
-   
-   
-
-   }
-   .ext{
-    margin-left: 5%;
-
-   }
-
-
-    
-  </style>
-
+<link rel="stylesheet" href="./mainpage.">
 
 
 
@@ -140,38 +43,34 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top" data-scrollto-offset="0">
     <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+            <h1>UdyogShala<span>.</span></h1>
+        </a>
 
-      <a  class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-       
-        <h1>UdyogShala<span>.</span></h1>
-      </a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <!-- <li><a class="nav-link scrollto" href="main.html">Home</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="main.html#about">About</a></li> -->
-          <li><a class="nav-link scrollto" href="main.html#services">Services</a></li>
-         <li><a class="nav-link scrollto" href="main.html#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="main.html#contact">Contact us</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle d-none"></i>
-      </nav><!-- .navbar -->
-
-
-
-
-
-
-
+        <nav id="navbar" class="navbar">
+            <ul>
+                <!-- <li><a class="nav-link scrollto" href="main.html">Home</a></li> -->
+                <!-- <li><a class="nav-link scrollto" href="main.html#about">About</a></li> -->
+                <li><a class="nav-link scrollto" href="main.html#services">Services</a></li>
+                <li><a class="nav-link scrollto" href="main.html#team">Team</a></li>
+                <li><a class="nav-link scrollto" href="main.html#contact">Contact us</a></li>
+                <li><span class="navbar-text" id="nameDisplay"></span></li>
+                <!-- Add user icon with custom styles -->
+                <li><span class="navbar-text"><i class="bi bi-person-fill user-icon"></i></span></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle d-none"></i>
+        </nav><!-- .navbar -->
     </div>
-  </header>
+</header>
+
+
   
   <!-- End Header -->
 
  
 
   <main id="main">
-    <section id="cta" class="cta">
+    <section id="cta" class="cta animation">
       
     </section>
 
@@ -182,9 +81,8 @@
       <div class="container" data-aos="fade-up">
   
         <div class="section-header">
-          <h2>Services</h2>
-          <p>
-            Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle</p>
+          <h2>Our Services</h2>
+          <p>Embark on your entrepreneurial journey with our tailored services for small-scale industry startups. Benefit from expert consultation, business planning assistance, and market research insights to craft a solid foundation. Navigate legal complexities effortlessly with our regulatory compliance support. Optimize finances with strategic guidance and leverage innovative technology solutions for operational efficiency. Elevate your brand presence through targeted marketing strategies and access specialized training for skill enhancement. Connect with a supportive network of entrepreneurs and mentors for ongoing guidance. With our comprehensive suite of services, we empower you to realize your small-scale industry ambitions with confidence and success. Let's build your entrepreneurial dream together!</p>
         </div>
   
         <div class="row gy-5">
@@ -192,15 +90,15 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
-                <a href="#steps"> <img src="assets/img/services-1.jpg"  class="img-fluid" alt=""></a>
+                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-activity"></i>
                 </div>
-                <a href="#steps" class="stretched-link">
+                <a href="userdetails.html" class="stretched-link">
                   <h3>Business Planning Assistance</h3>
-              </a>
+                </a>
                 <p>Craft your roadmap to success with our expert business planning assistance tailored to your startup needs.</p>
               </div>
             </div>
@@ -215,7 +113,7 @@
                 <div class="icon">
                   <i class="bi bi-broadcast"></i>
                 </div>
-                <a href="#finance-faq" class="stretched-link">
+                <a href="userdetails.html" class="stretched-link">
                   <h3>Financial Plan and Guidance</h3>
                 </a>
                 <p>Get personalized financial guidance and robust planning strategies to steer your startup towards sustainable growth.</p>
@@ -226,13 +124,13 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+                <img src="./images/machine.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-easel"></i>
                 </div>
-                <a href="#machinery" class="stretched-link">
+                <a href="userdetails.html" class="stretched-link">
                   <h3>Machinery Operation and Training</h3>
                 </a>
                 <p>Optimize machinery operation efficiency with our tailored solutions for seamless productivity.</p>
@@ -243,13 +141,13 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-4.jpg" class="img-fluid" alt="">
+                <img src="./images/research.jpeg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-bounding-box-circles"></i>
                 </div>
-                <a href="#marketing" class="stretched-link">
+                <a href="userdetails.html" class="stretched-link">
                   <h3>Marketing and Market Research</h3>
                 </a>
                 <p>Get expert guidance in business planning, financial management, and machinery operations for sustainable growth.</p>
@@ -260,16 +158,16 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-5.jpg" class="img-fluid" alt="">
+                <img src="./images/profit.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-calendar4-week"></i>
                 </div>
-                <a href="#profit"  class="stretched-link">
-                  <h3>profit and pricing</h3>
+                <a href="userdetails.html"  class="stretched-link">
+                  <h3>Profit and Pricing</h3>
                 </a>
-                <p>Achieve maximum profit and production efficiency with our specialized strategies tailored to your business goals.</p>
+                <p>Achieve maximum profitability and production efficiency with our specialized strategies tailored to your business goals.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -277,13 +175,13 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+                <img src="./images/raw.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-chat-square-text"></i>
                 </div>
-                <a href="#Resources"  class="stretched-link">
+                <a href="userdetails.html"  class="stretched-link">
                   <h3>Raw Material and Supply Chain Management</h3>
                 </a>
                 <p>Efficient raw material sourcing and supply chain management to optimize production processes.</p>
@@ -294,14 +192,14 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="800">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-6.jpg" class="img-fluid" alt="">
+                <img src="./images/tech.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-chat-square-text"></i>
                 </div>
-                <a href="#tech" class="stretched-link">
-                  <h3>Technology Integration and maximum production</h3>
+                <a href="userdetails.html" class="stretched-link">
+                  <h3>Technology Integration</h3>
                 </a>
                 <p>Incorporate cutting-edge technology solutions to streamline operations and enhance efficiency.</p>
               </div>
@@ -311,14 +209,14 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="900">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+                <img src="./images/market.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-chat-square-text"></i>
                 </div>
-                <a href="#market"  class="stretched-link">
-                  <h3>Link to  Online Market</h3>
+                <a href="userdetails.html"  class="stretched-link">
+                  <h3>Link to Market</h3>
                 </a>
                 <p>Establish direct links to target markets for increased visibility and sales opportunities.</p>
               </div>
@@ -328,13 +226,13 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="1000">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+                <img src="./images/growth.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-chat-square-text"></i>
                 </div>
-                <a href="market" class="stretched-link">
+                <a href="userdetails.html" class="stretched-link">
                   <h3>Expansion and Growth Strategies</h3>
                 </a>
                 <p>Develop tailored expansion plans and growth strategies to seize new opportunities in the market.</p>
@@ -347,6 +245,39 @@
       </div>
     </section>
     <!-- end service section -->
+
+
+
+
+
+    <!-- ====== chatbot ====== -->
+
+  <section id="chatbot">
+
+    <!-- Chatbot Button -->
+    <a href="#" class="chatbot-button" onclick="toggleChatbot()">
+      <img src="./images/chatbot.png" alt="">
+      ASK ME
+    </a>
+  
+    <!-- Chatbot Container -->
+    <div class="chat-container" id="chatbot-container">
+      <div class="chat-icon"></div>
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="suggestion-container" id="suggestion-container"></div>
+      <input type="text" id="user-input" placeholder="Type your message..." style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin: 0 10px; font-size: 14px; box-sizing: border-box; position: relative; bottom: 0;">
+    </div>
+  
+  </section>
+  
+  <!-- ======  End chatbot ====== -->
+
+
+
+
+
+
+
 
 
      <!-- ======= Features Section ======= -->
@@ -582,7 +513,7 @@
 
     <!-- ===== finential plan  ===== -->
 
-    <section id="finance-faq" class="faq" style="background-color: #f8f9fa; padding: 80px 0;">
+    <section id="finance-faq" class="faq features" style="background-color: #f8f9fa; padding: 80px 0;">
       <div class="container" data-aos="fade-up">
         <div class="row justify-content-center">
           <div class="col-lg-10">
@@ -754,8 +685,14 @@
 
       <!-- ===== finential plan  ===== -->
 
-             <!-- ======= Machinery ======= -->
-             <section id="machinery" class="about">
+
+
+
+
+
+
+      <!-- ======= Machinery ======= -->
+             <section id="machinery" class="about animation">
               <div class="container" data-aos="fade-up">
             
                 <div class="section-header">
@@ -871,9 +808,14 @@
               </div>
             </section>
             
-           
-            
-            <!-- ===== end machinery===== -->
+      <!-- ===== end machinery===== -->
+
+
+
+
+
+
+
 
 
 
@@ -881,7 +823,7 @@
        <!-- ===== marketing ===== -->
 
 
-            <section id="marketing" class="faq" style="background-color: #f8f9fa; padding: 80px 0;">
+            <section id="marketing" class="faq features" style="background-color: #f8f9fa; padding: 80px 0;">
               <div class="container" data-aos="fade-up">
                 <div class="row justify-content-center">
                   <div class="col-lg-10">
@@ -1024,19 +966,18 @@
             </section>
             
 
-         
-          
-
-
-
-
         <!-- =====  End marketing ===== -->
 
 
 
 
+
+
+
+
+
         <!-- =====profit  ===== -->
-        <section id="profit">
+        <section id="profit" class="features">
           <div class="container">
             <h2>Net Profit and Time to Recoup</h2>
             <form id="calculationForm">
@@ -1082,9 +1023,17 @@
          <!-- ===== end profit  ===== -->
 
 
+
+
+
+
+
+
+
+
          <!-- =====Resources===== -->
 
-         <section id="Resources" class="faq" style="background-color: #f8f9fa; padding: 80px 0;">
+         <section id="Resources" class="faq features" style="background-color: #f8f9fa; padding: 80px 0;">
           <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
               <div class="col-lg-10">
@@ -1149,13 +1098,7 @@
 
 
         
-
-
-
-
-
-
-          <!-- ===== End Resources===== -->
+         <!-- ===== End Resources===== -->
 
 
           
@@ -1164,7 +1107,7 @@
 
           <!-- ===== Tech===== -->
 
-          <section id="tech">
+          <section id="tech" class="features">
             <div class="container">
               <div class="text-center mb-5">
                 <h2 class="section-title">technology integration and maximum production</h2>
@@ -1272,11 +1215,10 @@
           </section>
                
 
-           
-
            <!-- =====  End Tech===== -->
 
-          <section id="market">
+
+          <section id="market" class="features">
            <div class="container text-center">
             <h1></h1>
           </div>
@@ -1301,6 +1243,77 @@
         
           
           </section>
+          <!-- ==== team ==== -->
+
+
+          <section id="team" class="team">
+            <div class="container" data-aos="fade-up">
+      
+              <div class="section-header">
+                <h2>Our Team</h2>
+                <p></p>
+              </div>
+      
+              <div class="row gy-5">
+      
+                <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="team-member">
+                    <div class="member-img">
+                      <img src="./images/member1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="member-info">
+                      <div class="social">
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                      </div>
+                      <h4>Rohan R</h4>
+                      <span></span>
+                    </div>
+                  </div>
+                </div><!-- End Team Member -->
+      
+                <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="team-member">
+                    <div class="member-img">
+                      <img src="./images/lead.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="member-info">
+                      <div class="social">
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                      </div>
+                      <h4>Rohit Tiwari</h4>
+                      <span>Team Lead</span>
+                    </div>
+                  </div>
+                </div><!-- End Team Member -->
+      
+                <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
+                  <div class="team-member">
+                    <div class="member-img">
+                      <img src="./images/thomas.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="member-info">
+                      <div class="social">
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                      </div>
+                      <h4>Thomas Gomes</h4>
+                      <span>Chutia</span>
+                    </div>
+                  </div>
+                </div><!-- End Team Member -->
+      
+              </div>
+      
+            </div>
+          </section>
           
     
     
@@ -1313,45 +1326,45 @@
     
    
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-    
-        <div class="section-header text-center">
-          <h2>Contact Us</h2>
-        </div>
-    
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <form action="" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div><!-- End Contact Form -->
-    
-        </div>
-    
+   <!-- ======= Contact Section ======= -->
+   <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Contact Us</h2>
       </div>
-    </section><!-- End Contact Section -->
-    <!-- End Contact Section -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form role="form" onsubmit="showSentMessage()" class="contact-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+            </div>
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+            <div class="my-3">
+             
+              <div class="error-message"></div>
+              <div class="sent-message" id="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+            </div>
+          </form>
+        </div><!-- End Contact Form -->
+      </div>
+    </div>
+  </section>
+  
+  <!-- End Contact Section -->
+
 
 
   </main><!-- End #main -->
@@ -1373,7 +1386,10 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="./mainpage.js"></script>
+    <script src="./chatbot.js"></script>
+    <script src="./mainpage.js"></script>
+    <script src="./detail.js"></script>
+
 
 </body>
 

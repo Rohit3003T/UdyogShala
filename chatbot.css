@@ -1,0 +1,110 @@
+.chat-container {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 9999;
+  }
+
+  .chat-container .chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .chat-container .user-message,
+  .chat-container .bot-message {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .chat-container .user-message {
+    background-color: #007bff;
+    color: #fff;
+    text-align: right;
+  }
+
+  .chat-container .bot-message {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: left;
+  }
+
+  .chat-container .suggestion-container {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+  }
+
+  .suggestion-item {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .suggestion-item:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .chat-icon {
+    width: 80px;
+    height: 80px;
+    background-image: url('chat-icon.png');
+    background-size: cover;
+    margin-right: 10px;
+  }
+
+  .chatbot-button {
+    position: fixed;
+    bottom: 200px;
+    right: 80px;
+    font-weight: bold;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4da3ff;
+    color: #fff;
+    padding: 15px 25px;
+    border: 2px solid #4da3ff;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .chatbot-button:hover {
+    background-color: transparent;
+    color: #4da3ff;
+  }
+
+  .chatbot-button img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .chatbot-button:hover img {
+    transform: scale(1.2);
+  }
+  .chatbot{
+
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4s; /* don't forget to set a duration! */
+  
+  }
