@@ -26,6 +26,7 @@
 <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <link rel="stylesheet" href="./mainpage.css">
 
@@ -149,7 +150,7 @@ margin-bottom: 20px;
 
 /* Style for the collapsible button */
 .custom-collapsible {
-background-color: #f8f9fa; /* Light gray background */
+background-color: #D6E7EA; /* Light gray background */
 border: none;
 border-radius: 5px;
 color: #333; /* Dark text color */
@@ -200,7 +201,7 @@ height: 150px;
 
 .contact-form button {
 padding: 12px 30px;
-background-color: #007bff;
+background-color:#D6E7EA;
 color: #fff;
 border: none;
 border-radius: 5px;
@@ -209,7 +210,7 @@ transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-background-color: #0056b3;
+background-color:#D6E7EA;
 }
 
 .sent-message {
@@ -230,11 +231,204 @@ display: none;
   /* Hover effect */
   .user-icon:hover {
       transform: scale(1.1); /* Increase size on hover */
-      color:blue; /* Change color on hover */
-      cursor: pointer; /* Change cursor to pointer on hover */
+      color:#D6E7EA /* Change color on hover */
+      /* Change cursor to pointer on hover */
+  }
+  .animation{
+
+
+  }
+  /* Custom styles */
+  body {
+  background-color: #f8f9fa;
+  color: #343a40;
+  font-family: Arial, sans-serif;
+}
+
+.section-title {
+  color:#485664;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  color: #6c757d;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.accordion-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.accordion-button {
+  background-color:#d6e7ea;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color:#d6e7ea;
+}
+
+.accordion-button.collapsed {
+  background-color:#d6e7ea;
+}
+
+.accordion-body {
+  padding: 20px 30px;
+}
+
+.accordion-body p,
+.accordion-body ul {
+  color: #343a40;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.accordion-body ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.accordion-body ul li::before {
+  content: "\2022";
+  color:#d6e7ea;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.accordion-body h4 {
+  color:#459cac;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+/* CSS for nav link hover effect */
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link.active {
+  background-color: #38B2C8; /* Change to desired hover/active background color */
+  color: black !important; /* Change to desired hover/active text color */
+}
+
+/* CSS to remove the dark blue color after hover */
+.nav-pills .nav-link {
+  background-color: transparent !important;
+  color: #000; /* Change to desired default text color */
+}
+.candbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.mach {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.about-video {
+    width: 500px;
+}
+
+.video-frame {
+    width: 100%;
+    height: 100%;
+}
+.col-lg-12.align-self-center {
+    width: 700px; /* Set the width to 100% for text content */
+}
+
+
+
+
+
+
+
+#profit .container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
   }
 
+  #profit h2 {
+    color: #485664;
+    margin-bottom: 40px;
+  }
 
+  #profit form {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  #profit .form-group {
+    margin-bottom: 20px;
+  }
+
+  #profit .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+  }
+
+  #profit .btn-primary {
+    background-color: #38B2C8;
+    border-color: #38B2C8;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  #profit .btn-primary:hover {
+    background-color: #2a8e9d;
+    border-color: #2a8e9d;
+  }
+
+  #profit #result {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+
+  #profit #result p {
+    margin-bottom: 20px;
+    color: #485664;
+  }
+
+  #profit #result ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    color: #485664;
+  }
+
+  #profit #result ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+
+  
+  
 
 
 </style>
@@ -292,7 +486,7 @@ display: none;
   
         <div class="section-header">
           <h2>Our Services</h2>
-          <p>Embark on your entrepreneurial journey with our tailored services for small-scale industry startups. Benefit from expert consultation, business planning assistance, and market research insights to craft a solid foundation. Navigate legal complexities effortlessly with our regulatory compliance support. Optimize finances with strategic guidance and leverage innovative technology solutions for operational efficiency. Elevate your brand presence through targeted marketing strategies and access specialized training for skill enhancement. Connect with a supportive network of entrepreneurs and mentors for ongoing guidance. With our comprehensive suite of services, we empower you to realize your small-scale industry ambitions with confidence and success. Let's build your entrepreneurial dream together!</p>
+          <p>Embark on your small-scale industry startup journey with confidence! Benefit from expert consultation, market insights, and tailored support to lay a strong foundation for success. Navigate legal complexities seamlessly, streamline operations with cutting-edge technology, and boost your brand presence with targeted marketing. Join our supportive network of entrepreneurs and mentors. Let's bring your entrepreneurial dreams to life!</p>
         </div>
   
         <div class="row gy-5">
@@ -491,179 +685,173 @@ display: none;
 
 
      <!-- ======= Features Section ======= -->
-     <section id="steps" class="features">
+     <section id="steps" class="features animation">
       <div class="container" data-aos="fade-up">
-
         <ul class="nav nav-tabs row gy-4 d-flex">
-
+    
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-              <!-- <i class="bi bi-binoculars color-cyan"></i> -->
               <h4>1.</h4>
               <h4>Market Research and Niche Identification</h4>
             </a>
           </li><!-- End Tab 1 Nav -->
-
+    
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
               <h4>2.</h4>
               <h4>Legal Compliance and Business Registration</h4>
             </a>
           </li><!-- End Tab 2 Nav -->
-
+    
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
               <h4>3.</h4>
               <h4>Business Planning</h4>
             </a>
           </li><!-- End Tab 3 Nav -->
-
+    
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-            <h4>4.</h4>
+              <h4>4.</h4>
               <h4>Supplier Setup and Equipment Acquisition</h4>
             </a>
           </li><!-- End Tab 4 Nav -->
-
+    
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
-             <h4>5.</h4>
+              <h4>5.</h4>
               <h4>Product Development and Quality Assurance</h4>
             </a>
           </li><!-- End Tab 5 Nav -->
-
+    
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
-             <h4>6</h4>
-              <h4> Branding, Packaging, and Marketing </h4>
+              <h4>6.</h4>
+              <h4>Branding, Packaging, and Marketing</h4>
             </a>
-          </li>
-          <!-- End Tab 6 Nav -->
-           
-
+          </li><!-- End Tab 6 Nav -->
+    
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-7">
-            <h4>7.</h4>
+              <h4>7.</h4>
               <h4>Sales Strategy and Distribution Channels</h4>
             </a>
-          </li><!-- End Tab 4 Nav -->
-
+          </li><!-- End Tab 7 Nav -->
+    
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-8">
-           <h4>8.</h4>
+              <h4>8.</h4>
               <h4>Customer Service Excellence</h4>
             </a>
-          </li><!-- End Tab 5 Nav -->
-
+          </li><!-- End Tab 8 Nav -->
+    
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-9">
-             <h4>9.</h4>
+              <h4>9.</h4>
               <h4>Continuous Improvement and Growth</h4>
             </a>
-          </li>
-
+          </li><!-- End Tab 9 Nav -->
+    
         </ul>
-
+    
         <div class="tab-content">
-
+    
           <div class="tab-pane active show" id="tab-1">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
                 <h3>Market Research and Niche Identification</h3>
                 <p class="fst-italic">
-                  Conduct thorough research to understand the demand for paper plates in Bangalore, considering factors such as population demographics, consumer behavior, and market trends.
-                  Identify specific niche markets within the paper plate industry, such as eco-friendly plates made from recycled materials, biodegradable options, or plates with custom designs for events.
-                  Analyze competitors in each niche to identify gaps or opportunities for differentiation in your product offerings.</p>
-
-                
+                  Conduct thorough research to understand the demand for candles in your target market, considering factors such as demographics, consumer preferences, and market trends.
+                  Identify specific niche markets within the candle industry, such as scented candles, eco-friendly candles, or decorative candles for special occasions.
+                  Analyze competitors in each niche to identify gaps or opportunities for differentiation in your product offerings.
+                </p>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/features-1.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-1.svg" alt="Market Research" class="img-fluid">
               </div>
             </div>
-          </div><!-- End Tab Content 1 -->
-
+          </div>
+          
           <div class="tab-pane" id="tab-2">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
                 <h3>Legal Compliance and Business Registration</h3>
                 <p>
-                  Research and understand the legal and regulatory requirements for setting up a paper plate manufacturing business in Bangalore, including zoning regulations, environmental permits, and health and safety standards.
-                obtain necessary licenses and permits from local authorities and government agencies to operate your manufacturing facility legally.
-                 Consult with legal experts or business advisors to ensure full compliance with all applicable laws and regulations.
+                  Research and understand the legal and regulatory requirements for setting up a candle manufacturing business in your area, including zoning regulations, safety standards, and environmental permits.
+                  Obtain necessary licenses and permits from local authorities and government agencies to operate your manufacturing facility legally.
+                  Consult with legal experts or business advisors to ensure full compliance with all applicable laws and regulations.
                 </p>
-                
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-2.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-2.svg" alt="Legal Compliance" class="img-fluid">
               </div>
             </div>
-          </div><!-- End Tab Content 2 -->
-
+          </div>
+          
           <div class="tab-pane" id="tab-3">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
                 <h3>Business Planning</h3>
                 <p>
-                  Develop a comprehensive business plan outlining your company's vision, mission, and objectives, as well as strategies for achieving them.
-                  Define your unique selling proposition (USP) and competitive advantages, such as high-quality materials, innovative designs, or competitive pricing.
-                  Set specific short-term and long-term goals for your paper plate manufacturing business, including production targets, revenue projections, and market share goals.
+                  Develop a comprehensive business plan outlining your candle manufacturing business's vision, mission, and objectives, as well as strategies for achieving them.
+                  Define your unique selling proposition (USP) and competitive advantages, such as high-quality materials, unique candle designs, or personalized candle customization options.
+                  Set specific short-term and long-term goals for your candle manufacturing business, including production targets, revenue projections, and market share goals.
                 </p>
-                
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-3.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-3.svg" alt="Business Planning" class="img-fluid">
               </div>
             </div>
-          </div><!-- End Tab Content 3 -->
-
+          </div>
+          
           <div class="tab-pane" id="tab-4">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
                 <h3>Supplier Setup and Equipment Acquisition</h3>
                 <p>
-                  Research and identify reliable suppliers for paperboard, coatings, and other raw materials required for manufacturing paper plates.
+                  Research and identify reliable suppliers for wax, wicks, fragrance oils, dyes, and other raw materials required for candle manufacturing.
                   Establish partnerships or negotiate contracts with suppliers to ensure a steady and consistent supply of materials at competitive prices.
-                  Invest in high-quality machinery and equipment for paper plate manufacturing, including plate forming machines, cutting machines, and packaging equipment, ensuring efficiency and productivity in your operations.</p>
+                  Invest in high-quality machinery and equipment for candle manufacturing, including melting tanks, molds, and packaging machines, ensuring efficiency and quality in your production process.
+                </p>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-4.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-4.svg" alt="Supplier Setup" class="img-fluid">
               </div>
             </div>
-          </div><!-- End Tab Content 4 -->
-
+          </div>
+          
           <div class="tab-pane" id="tab-5">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
                 <h3>Product Development and Quality Assurance</h3>
-                <p>Develop prototypes of paper plates in various sizes, shapes, designs, and materials, considering factors such as durability, functionality, and eco-friendliness.
-                  Conduct rigorous testing and quality assurance procedures to ensure that your paper plates meet industry standards and customer expectations for strength, heat resistance, and food safety.
-                  Gather feedback from potential customers, industry experts, and focus groups to refine your paper plate designs and improve product quality.</p>
+                <p>
+                  Develop prototypes of candles in various shapes, sizes, colors, and scents, considering factors such as burn time, fragrance strength, and aesthetic appeal.
+                  Conduct rigorous testing and quality assurance procedures to ensure that your candles meet industry standards and customer expectations for performance, safety, and quality.
+                  Gather feedback from potential customers, focus groups, and test markets to refine your candle designs, improve product quality, and enhance customer satisfaction.
+                </p>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-5.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-5.svg" alt="Product Development" class="img-fluid">
               </div>
             </div>
-          </div><!-- End Tab Content 5 -->
-
+          </div>
+          
           <div class="tab-pane" id="tab-6">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
                 <h3>Branding, Packaging, and Marketing</h3>
                 <p>
-                  Develop a strong and distinctive brand identity that reflects the values and qualities of your paper plate manufacturing business, including logo design, color schemes, and brand messaging.
-                  Design visually appealing and functional packaging for your paper plates that enhances their appeal and protects them during transportation and storage.
-                  Implement a comprehensive marketing strategy to promote your paper plates and build brand awareness, including online marketing channels such as social media, search engine optimization (SEO), content marketing, and email campaigns, as well as offline marketing tactics such as trade shows, events, and collaborations with local businesses.                </p>
-               
+                  Develop a strong and memorable brand identity for your candle products, including logo design, packaging aesthetics, and brand messaging that resonates with your target audience.
+                  Design visually appealing and functional packaging for your candles that enhances their presentation and protects them during storage and shipping.
+                  Implement a comprehensive marketing strategy to promote your candles and build brand awareness, utilizing online channels such as social media, e-commerce platforms, and influencer collaborations, as well as offline strategies such as retail partnerships, events, and craft fairs.
+                </p>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-6.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-6.svg" alt="Branding and Marketing" class="img-fluid">
               </div>
             </div>
           </div>
           
-          <!-- End Tab Content 6 -->
-
           <div class="tab-pane" id="tab-7">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
@@ -671,33 +859,31 @@ display: none;
                 <p>
                   Develop a sales strategy that outlines how you will reach and sell to your target customers, including both direct sales channels and distribution partnerships.
                   Establish direct sales channels through your website, social media platforms, and online marketplaces to reach consumers directly and generate online sales.
-                  Explore partnerships with wholesalers, retailers, and distributors to expand your reach and distribution network, allowing your paper plates to be sold in stores, restaurants, catering businesses, and other outlets.                </p>
-                
+                  Explore partnerships with retailers, gift shops, boutiques, and specialty stores to expand your reach and distribution network, allowing your candles to be sold in physical locations and reaching a wider audience.
+                </p>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-3.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-3.svg" alt="Sales Strategy" class="img-fluid">
               </div>
             </div>
           </div>
-
+          
           <div class="tab-pane" id="tab-8">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
                 <h3>Customer Service Excellence</h3>
                 <p>
-                  Prioritize excellent customer service to build trust and loyalty among your customers, including responsive communication, timely order fulfillment, and personalized support.
+                  Prioritize excellent customer service to build trust and loyalty among your customers, including responsive communication, timely order processing, and personalized support.
                   Implement systems and processes for handling customer inquiries, feedback, and complaints effectively, ensuring that customer concerns are addressed promptly and professionally.
-                  Monitor customer satisfaction levels and continuously seek feedback to identify areas for improvement and enhance the overall customer experience with your paper plates.                </p>
-
-                
+                  Monitor customer satisfaction levels and seek feedback to identify areas for improvement and enhance the overall customer experience with your candles, fostering long-term relationships and repeat business.
+                </p>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-5.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-5.svg" alt="Customer Service" class="img-fluid">
               </div>
             </div>
           </div>
-            
-
+          
           <div class="tab-pane" id="tab-9">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
@@ -705,17 +891,21 @@ display: none;
                 <p>
                   Regularly evaluate your business performance and market dynamics to identify opportunities for improvement and growth.
                   Analyze sales data, customer feedback, and market trends to make informed decisions about product development, marketing strategies, and expansion opportunities.
-                  Stay adaptable and responsive to changes in the market landscape, technology advancements, and customer preferences, continually seeking ways to innovate and differentiate your paper plate manufacturing business for sustained success and growth.                </p>
+                  Stay adaptable and responsive to changes in consumer preferences, industry trends, and competitive landscapes, continually seeking ways to innovate and differentiate your candle products for sustained success and growth.
+                </p>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-6.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-6.svg" alt="Growth Strategy" class="img-fluid">
               </div>
             </div>
           </div>
+          <!-- End Tab Content 9 -->
+    
         </div>
-
+    
       </div>
-    </section><!-- End Features Section -->
+    </section>
+    <!-- End Features Section -->
 
 
 
@@ -729,10 +919,10 @@ display: none;
           <div class="col-lg-10">
             <div class="text-center mb-5">
               <h2 class="section-title">Financial Plan and Guidance</h2>
-              <p class="section-description"></p>
+              <p class="section-description">Explore financial aspects and funding options for your candle making business.</p>
             </div>
             <div class="accordion" id="faqAccordion">
-
+    
               <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
@@ -740,22 +930,30 @@ display: none;
                     Tools and Equipment Prices for Candle Making:
                   </button>
                 </h3>
-                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                   <p><b>Melting Pot or Double Boiler:</b>₹500 to ₹2000</p>
-                   <p><b>Thermometer:</b>₹150 to ₹500</p>
-                   <p><b>Pouring Pitcher: </b>₹300 to ₹1000</p>
-                   <p><b>Wick Holder or Wick Bar: </b>₹100 to ₹300</p>
-                   <p><b>Molds: </b>₹200 to ₹1000 (Varies based on size and complexity)</p>
-                   <p><b>Cooling Rack: </b>₹200 to ₹500</p>
-                   <p><b>Wick Trimmer: </b> ₹100 to ₹300</p>
-                   <p><b>Scale: </b>₹500 to ₹2000</p>
-                   <p><b>Stirring Utensils: </b>₹100 to ₹500</p>
-                   <p><b>Heat Source (Stove or Hot Plate): </b>1500 to ₹5000</p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul class="list-group">
+                          <li class="list-group-item"><b>Melting Pot or Double Boiler:</b> ₹500 to ₹2000</li>
+                          <li class="list-group-item"><b>Thermometer:</b> ₹150 to ₹500</li>
+                          <li class="list-group-item"><b>Pouring Pitcher:</b> ₹300 to ₹1000</li>
+                          <li class="list-group-item"><b>Wick Holder or Wick Bar:</b> ₹100 to ₹300</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="list-group">
+                          <li class="list-group-item"><b>Molds:</b> ₹200 to ₹1000 (Varies based on size and complexity)</li>
+                          <li class="list-group-item"><b>Cooling Rack:</b> ₹200 to ₹500</li>
+                          <li class="list-group-item"><b>Wick Trimmer:</b> ₹100 to ₹300</li>
+                          <li class="list-group-item"><b>Scale:</b> ₹500 to ₹2000</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div><!-- # Faq item-->
-
+    
               <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
@@ -763,19 +961,19 @@ display: none;
                     Average Investment and Cost for Candle Making Business
                   </button>
                 </h3>
-                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                     <p><b>Equipment and Machinery: </b>₹26,050 to ₹97,100</p>
-                     <p><b>Raw Materials: </b>₹10,000 to ₹20,000</p>
-                     <p><b>Space Rental or Setup Cost (if applicable)</b></p>
-                     <p><b>Registration and Licenses Cost</b></p>
-                     <p><b>Marketing and Packaging Cost</b></p>  
-                     <h3><b>Average Net Cost (Initial Investment): ₹36,050 to ₹117,100</b></h3>
-                  
-                  
+                    <ul class="list-group">
+                      <li class="list-group-item"><b>Equipment and Machinery:</b> ₹26,050 to ₹97,100</li>
+                      <li class="list-group-item"><b>Raw Materials:</b> ₹10,000 to ₹20,000</li>
+                      <li class="list-group-item"><b>Space Rental or Setup Cost (if applicable)</b></li>
+                      <li class="list-group-item"><b>Registration and Licenses Cost</b></li>
+                      <li class="list-group-item"><b>Marketing and Packaging Cost</b></li>  
+                    </ul>
+                    <h4 class="mt-3"><b>Average Net Cost (Initial Investment):</b> ₹36,050 to ₹117,100</h4>
                   </div>
                 </div>
-              </div><!-- # Faq item-->
+              </div>
 
               <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
                 <h3 class="accordion-header">
@@ -784,17 +982,20 @@ display: none;
                     Ongoing Operational Costs
                   </button>
                 </h3>
-                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                    <p><b>Raw Materials: </b>₹10,000 to ₹20,000 per month</p>
-                    <p><b>Electricity:</b>: ₹2,000 to ₹5,000 per month</p>
-                    <p><b>Marketing and Promotion: </b>₹5,000 to ₹10,000 per month</p>
-                    <p><b>Miscellaneous Expenses: </b>₹3,000 to ₹7,000 per month</p>
-                    <h3><b>Total Estimated Ongoing Operational Cost: </b> Approximately <b>₹32,000 per month</b></h3>
+                    <ul class="list-group">
+                      <li class="list-group-item"><b>Raw Materials:</b> ₹10,000 to ₹20,000 per month</li>
+                      <li class="list-group-item"><b>Electricity:</b> ₹2,000 to ₹5,000 per month</li>
+                      <li class="list-group-item"><b>Marketing and Promotion:</b> ₹5,000 to ₹10,000 per month</li>
+                      <li class="list-group-item"><b>Miscellaneous Expenses:</b> ₹3,000 to ₹7,000 per month</li>
+                    </ul>
+                    <h4 class="mt-3"><b>Total Estimated Ongoing Operational Cost:</b> Approximately ₹32,000 per month</h4>
                   </div>
                 </div>
               </div><!-- # Faq item-->
-                
+    
+              <!-- Finance -->
               <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
@@ -802,95 +1003,90 @@ display: none;
                     Finance
                   </button>
                 </h3>
-                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-
-                    <p><b>Business Loan Options: </b></p>
-                     <p><b>Loan intrest varies from  9% to 16%  based on choosen scheme and bank </b></p>
-                     <p><b>list of banks proivide loans </b></p>
-                     <ul>
-                      <li>HDFC Bank Business Loan</li>
-                     <li>Axis Bank Business Loan:</li>
-                     <li>ICICI Bank Business Loan</li>
-                     <li>Kotak Mahindra Bank Business Loan</li>
-                     <li>IDFC First Bank Business Loan</li>
-                     <li>SBI Business Loan</li>
-                    
+                    <p><b><a href="https://www.paisabazaar.com/business-loan/types-of-business-loans/">Business Loan Options:</a></b></p>
+                    <p><b>Loan interest varies from 9% to 16% based on the chosen scheme and bank.</b></p>
+                    <p><b>List of banks providing loans:</b></p>
+                    <ul class="list-group">
+                      <li class="list-group-item">HDFC Bank Business Loan</li>
+                      <li class="list-group-item">Axis Bank Business Loan</li>
+                      <li class="list-group-item">ICICI Bank Business Loan</li>
+                      <li class="list-group-item">Kotak Mahindra Bank Business Loan</li>
+                      <li class="list-group-item">IDFC First Bank Business Loan</li>
+                      <li class="list-group-item">SBI Business Loan</li>
                     </ul>
-                    <i>Before finalizing a loan, carefully review the terms, including interest rates, processing fees, and repayment schedules. Additionally, consider seeking advice from financial experts or consulting with representatives from each bank to tailor the loan to your specific business needs.</i>
+                    <p><i>Before finalizing a loan, carefully review the terms, including interest rates, processing fees, and repayment schedules. Additionally, consider seeking advice from financial experts or consulting with representatives from each bank to tailor the loan to your specific business needs.</i></p>
                   </div>
                 </div>
               </div><!-- # Faq item-->
-                
+    
+              <!-- Government Loan Schemes -->
               <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
                     <i class="bi bi-question-circle question-icon"></i>
-                    Government Loan Schemes 
+                    Government Loan Schemes
                   </button>
                 </h3>
-                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-
-                    <p><b>Pradhan Mantri Mudra Yojana (PMMY):</b>
-                      <ul>
-                          <li>Offers loans up to ₹10 lakh for small businesses, categorized into Shishu (up to ₹50,000), Kishor (up to ₹5 lakhs), and Tarun (up to ₹10 lakhs).</li>
-                          <li>Avail loans through specified banks, NBFCs, and microfinance institutions.</li>
-                      </ul>
-                  </p>
-                  <p><b>Stand-Up India Scheme:</b>
-                      <ul>
-                          <li>Promotes entrepreneurship, providing loans from ₹10 lakhs to ₹1 crore for first-time businesses.</li>
-                          <li>Encourages loans to female borrowers, and funds can be used for starting or expanding businesses.</li>
-                      </ul>
-                  </p>
-                  <p><b>Credit Guarantee Fund Scheme for Micro and Small Enterprises (CGS):</b>
-                      <ul>
-                          <li>Offers collateral-free loans up to ₹2 crores for MSEs without third-party guarantees.</li>
-                          <li>National Credit Guarantee Trustee Company (NCGTC) provides credit guarantee cover, reducing risks for banks.</li>
-                      </ul>
-                  </p>
-                  <p><b>Pradhan Mantri Employment Generation Programme (PMEGP):</b>
-                      <ul>
-                          <li>Credit-linked subsidy scheme promoting self-employment ventures in the micro-enterprise sector.</li>
-                          <li>Facilitates new businesses, providing financial assistance through banks with subsidies ranging from 15% to 35%.</li>
-                      </ul>
-                  </p>
-                  <p><b>Small Industries Development Bank of India (SIDBI) Schemes:</b>
-                      <ul>
-                          <li>SIDBI offers various schemes, including CGTMSE for collateral-free loans and SMILE for manufacturing businesses.</li>
-                          <li>Stand-Up India under SIDBI supports SC/ST and women entrepreneurs with loans between ₹10 lakhs and ₹1 crore.</li>
-                      </ul>
-                  </p>
-                  <p><b>Export Credit Guarantee Corporation (ECGC) Schemes:</b>
-                      <ul>
-                          <li>Provides small business loans for exporters, offering credit insurance against non-payment delays.</li>
-                          <li>Offers pre-shipment and post-shipment finance, facilitating international business expansion.</li>
-                      </ul>
-                  </p>
-                  <p><b>State-Specific Loan Schemes:</b>
-                      <ul>
-                          <li>Many states initiate their loan schemes. For example, TIIC in Tamil Nadu and MSSIDC in Maharashtra offer term loans and financial assistance for small-scale industries.</li>
-                      </ul>
-                  </p>
-                  
                     
-                   
-                   
+                    
+                    <p class="loantext"><b><a href="https://youtu.be/KwoYlqQV2-g?si=jOIxMzISjnlKCO9R"> Pradhan Mantri Mudra Yojana (PMMY):</a></b></p>
+                    <ul class="list-group">
+                      <li class="list-group-item">Offers loans up to ₹10 lakh for small businesses, categorized into Shishu (up to ₹50,000), Kishor (up to ₹5 lakhs), and Tarun (up to ₹10 lakhs).</li>
+                      <li class="list-group-item">Avail loans through specified banks, NBFCs, and microfinance institutions.</li>
+                    </ul>
+                    
+                    <p><b> <a href="https://youtu.be/FvK7mXwRAr8?si=LaeD4W61bJfPt0QR">Stand-Up India Scheme:</a></b></p>
+                    <ul class="list-group">
+                      <li class="list-group-item">Promotes entrepreneurship, providing loans from ₹10 lakhs to ₹1 crore for first-time businesses.</li>
+                      <li class="list-group-item">Encourages loans to female borrowers, and funds can be used for starting or expanding businesses.</li>
+                    </ul>
+              
+                    <p><b><a href="https://youtu.be/wNipdYntL5E?si=TqdlvwptkY4Lre-b">Credit Guarantee Fund Scheme for Micro and Small Enterprises (CGS):</a></b></p>
+                    <ul class="list-group">
+                      <li class="list-group-item">Offers collateral-free loans up to ₹2 crores for MSEs without third-party guarantees.</li>
+                      <li class="list-group-item">National Credit Guarantee Trustee Company (NCGTC) provides credit guarantee cover, reducing risks for banks.</li>
+                    </ul>
+              
+                    <p><b> <a href="https://youtu.be/73ZLJv4KZpY?si=T0n6PymUzD2A3PsW"> Pradhan Mantri Employment Generation Programme (PMEGP):</a></b></p>
+                    <ul class="list-group">
+                      <li class="list-group-item">Credit-linked subsidy scheme promoting self-employment ventures in the micro-enterprise sector.</li>
+                      <li class="list-group-item">Facilitates new businesses, providing financial assistance through banks with subsidies ranging from 15% to 35%.</li>
+                    </ul>
+              
+                    <p><b><a href="https://youtu.be/0K_kRL9a-8s?si=4qAmqtrRz1SxwT53">Small Industries Development Bank of India (SIDBI) Schemes:</a></b></p>
+                    <ul class="list-group">
+                      <li class="list-group-item">SIDBI offers various schemes, including CGTMSE for collateral-free loans and SMILE for manufacturing businesses.</li>
+                      <li class="list-group-item">Stand-Up India under SIDBI supports SC/ST and women entrepreneurs with loans between ₹10 lakhs and ₹1 crore.</li>
+                    </ul>
+              
+                    <p><b> <a href="https://youtu.be/ucOValV3mnc?si=nno1Yo3GJgAPV2iw">Export Credit Guarantee Corporation (ECGC) Schemes:</a></b></p>
+                    <ul class="list-group">
+                      <li class="list-group-item">Provides small business loans for exporters, offering credit insurance against non-payment delays.</li>
+                      <li class="list-group-item">Offers pre-shipment and post-shipment finance, facilitating international business expansion.</li>
+                    </ul>
+              
+                    <p><b><a href="">State-Specific Loan Schemes:</a></b></p>
+                    <ul class="list-group">
+                      <li class="list-group-item">Many states initiate their loan schemes. For example, TIIC in Tamil Nadu and MSSIDC in Maharashtra offer term loans and financial assistance for small-scale industries.</li>
+                    </ul>
                   </div>
                 </div>
               </div><!-- # Faq item-->
-
-             
-
-            </div>
-
-          </div>
-
-          
-        </div>
-
-      </div>
+            
+    
+              <!-- Add more accordion items as needed -->
+    
+            </div><!-- End Accordion -->
+    
+          </div><!-- End Column -->
+    
+        </div><!-- End Row -->
+    
+      </div><!-- End Container -->
     </section>
 
       <!-- ===== finential plan  ===== -->
@@ -902,121 +1098,99 @@ display: none;
 
 
       <!-- ======= Machinery ======= -->
-             <section id="machinery" class="about animation">
-              <div class="container" data-aos="fade-up">
+      <section id="machinery" class="about animation" style="background-color: #f8f9fa; padding: 80px 0;">
+        <div class="container" data-aos="fade-up">
+      
+          <div class="section-header text-center">
+            <h2  style="color: #485664"><b>Machinery Operation and Training </b></h2>
+          </div>
+      
+          <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
             
-                <div class="section-header">
-                  <h2>Machinary Operation and Training</h2>
-                  
-                </div>
+            <div class="mach">
             
-                <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
-            
-                  <div class="col-lg-6 ">
-                    <div class="about-video">
-                      <iframe width="100%" height="400" src="https://www.youtube.com/embed/8oJ1OC8Ql7s?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                  </div>
-            
-                  <div class="col-lg-6 align-self-center">
-                   
-            
-                    <!-- Tabs -->
-                    <ul class="nav nav-pills mb-3">
-                      <li class="nav-item"><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Machinery for Candle Making</a></li>
-                      <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#tab2">Candle Making Process</a></li>
-                    
-                    </ul><!-- End Tabs -->
-            
-                    <!-- Tab Content -->
-                    <div class="tab-content">
-            
-                      <div class="tab-pane fade show active" id="tab1">
-                        <!-- Tab 1 Content -->
-                        <h4>Machinery for Candle Making:</h4>
-                        <ol>
-                          <li><strong>Melting Pot or Double Boiler:</strong><br>
-                            A fundamental tool for efficiently melting wax, ensuring a consistent and smooth texture.
-                          </li>
-                          <li><strong>Thermometer:</strong><br>
-                            An indispensable device that monitors the wax temperature, contributing to the precision of the candle-making process.
-                          </li>
-                          <li><strong>Pouring Pitcher:</strong><br>
-                            This specialized tool facilitates the controlled pouring of melted wax into molds, allowing for intricate and detailed candle designs.
-                          </li>
-                          <li><strong>Wick Holder or Wick Bar:</strong><br>
-                            Ensures the proper centering of the wick during the pouring stage, a crucial aspect for an even burn.
-                          </li>
-                          <li><strong>Molds:</strong><br>
-                            Available in various shapes and sizes, molds play a pivotal role in determining the final form of the candles, allowing for creativity and customization.
-                          </li>
-                          <li><strong>Cooling Rack:</strong><br>
-                            After the pouring process, a cooling rack is employed to enable the candles to cool and harden uniformly, contributing to their structural integrity.
-                          </li>
-                          <li><strong>Wick Trimmer:</strong><br>
-                            A precision tool designed for post-production, trimming wicks to the desired length for an optimal burn.
-                          </li>
-                          <li><strong>Scale:</strong><br>
-                            Accurate measurement is paramount in candle making. A reliable scale is essential for measuring wax and fragrance oil, ensuring consistency in each batch.
-                          </li>
-                          <li><strong>Stirring Utensils:</strong><br>
-                            These tools facilitate thorough mixing of wax and additives, ensuring a homogenous mixture and enhancing the quality of the candles.
-                          </li>
-                          <li><strong>Heat Source:</strong><br>
-                            Whether it's a stove or a dedicated hot plate, the heat source is the powerhouse driving the wax-melting process.
-                          </li>
-                        </ol>
-                      </div>
-                      
-            
-                      <div class="tab-pane fade" id="tab2">
-                        <!-- Tab 2 Content -->
-                        <h4>Candle Making Process:</h4>
-                        <ol>
-                          <li><strong>Prepare the Work Area:</strong><br>
-                            Begin with a clean and organized workspace, ensuring a conducive environment for the meticulous craft of candle making.
-                          </li>
-                          <li><strong>Measure Ingredients:</strong><br>
-                            Accurate measurement is the foundation of successful candle making. Weigh and measure wax and fragrance oil precisely.
-                          </li>
-                          <li><strong>Melting Wax:</strong><br>
-                            Utilize a melting pot or double boiler to melt the wax, maintaining a keen eye on the temperature to achieve the desired consistency.
-                          </li>
-                          <li><strong>Adding Fragrance:</strong><br>
-                            Enhance your candles with aromatic notes by carefully incorporating fragrance oil into the melted wax, ensuring a harmonious blend.
-                          </li>
-                          <li><strong>Preparing Molds:</strong><br>
-                            Arrange the molds, strategically placing wicks and securing them with a wick holder to maintain proper alignment during the pouring process.
-                          </li>
-                          <li><strong>Pouring Wax:</strong><br>
-                            Exercise precision as you pour the melted wax into the molds, creating the foundation for the unique shapes and designs of your candles.
-                          </li>
-                          <li><strong>Cooling:</strong><br>
-                            Transfer the molds to a cooling rack, allowing the candles to cool and solidify evenly, a crucial step for the final product's structural integrity.
-                          </li>
-                          <li><strong>Trimming Wicks:</strong><br>
-                            Employ a wick trimmer to cut the wicks to the desired length, ensuring an optimal burn and a polished aesthetic.
-                          </li>
-                          <li><strong>Removing Candles:</strong><br>
-                            Gently release the candles from the molds, unveiling the fruits of your labor.
-                          </li>
-                          <li><strong>Quality Check:</strong><br>
-                            Thoroughly inspect each candle, checking for any imperfections or defects. This step ensures that your creations meet the highest standards.
-                          </li>
-                        </ol>
-                      </div><!-- End Tab 2 Content -->
-                      
-            
-                     
-            
-                    </div>
-            
-                  </div>
-            
-                </div>
-            
+            <div class="candbox">
+
+            <div class="col-lg-6">
+              <div class="about-video">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/bzXRXyBcSNo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-            </section>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-video">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/8oJ1OC8Ql7s?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+
+
+      
+            <div class="col-lg-12 align-self-center">
+
+      
+              <!-- Tabs -->
+              <ul class="nav nav-pills mb-3">
+                <li class="nav-item">
+                  <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Machinery for Candle Making</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="pill" href="#tab2">Candle Making Process</a>
+                </li>
+              </ul>
+              <!-- End Tabs -->
+      
+              <!-- Tab Content -->
+              <div class="tab-content">
+      
+                <div class="tab-pane fade show active" id="tab1">
+                  <!-- Tab 1 Content -->
+                  <h4 style="color: #38B2C8; font-weight: bold;">Machinery for Candle Making:</h4>
+                  <ul class="list-group">
+                    <li class="list-group-item"><b>Melting Pot or Double Boiler:</b> A fundamental tool for efficiently melting wax, ensuring a consistent and smooth texture.</li>
+                    <li class="list-group-item"><b>Thermometer:</b> An indispensable device that monitors the wax temperature, contributing to the precision of the candle-making process.</li>
+                    <li class="list-group-item"><b>Pouring Pitcher:</b> This specialized tool facilitates the controlled pouring of melted wax into molds, allowing for intricate and detailed candle designs.</li>
+                    <li class="list-group-item"><b>Wick Holder or Wick Bar:</b> Ensures the proper centering of the wick during the pouring stage, a crucial aspect for an even burn.</li>
+                    <li class="list-group-item"><b>Molds:</b> Available in various shapes and sizes, molds play a pivotal role in determining the final form of the candles, allowing for creativity and customization.</li>
+                    <li class="list-group-item"><b>Cooling Rack:</b> After the pouring process, a cooling rack is employed to enable the candles to cool and harden uniformly, contributing to their structural integrity.</li>
+                    <li class="list-group-item"><b>Wick Trimmer:</b> A precision tool designed for post-production, trimming wicks to the desired length for an optimal burn.</li>
+                    <li class="list-group-item"><b>Scale:</b> Accurate measurement is paramount in candle making. A reliable scale is essential for measuring wax and fragrance oil, ensuring consistency in each batch.</li>
+                    <li class="list-group-item"><b>Stirring Utensils: </b>These tools facilitate thorough mixing of wax and additives, ensuring a homogenous mixture and enhancing the quality of the candles.</li>
+                    <li class="list-group-item"><b>Heat Source:</b> Whether it's a stove or a dedicated hot plate, the heat source is the powerhouse driving the wax-melting process.</li>
+                  </ul>
+                </div>
+      
+                <div class="tab-pane fade" id="tab2">
+                  <!-- Tab 2 Content -->
+                  <h4 style="color: #38B2C8; font-weight: bold;">Candle Making Process:</h4>
+                  <ol class="list-group">
+                    <li class="list-group-item"><b>Prepare the Work Area: </b>Begin with a clean and organized workspace, ensuring a conducive environment for the meticulous craft of candle making.</li>
+                    <li class="list-group-item"><b>Measure Ingredients:</b> Accurate measurement is the foundation of successful candle making.</li>
+                    <li class="list-group-item"><b>Melting Wax:</b> Utilize a melting pot or double boiler to melt the wax, maintaining a keen eye on the temperature to achieve the desired consistency.</li>
+                    <li class="list-group-item"><b>Adding Fragrance:</b> Enhance your candles with aromatic notes by carefully incorporating fragrance oil into the melted wax, ensuring a harmonious blend.</li>
+                    <li class="list-group-item"><b>Preparing Molds:</b> Arrange the molds, strategically placing wicks and securing them with a wick holder to maintain proper alignment during the pouring process.</li>
+                    <li class="list-group-item"><b>Pouring Wax:</b> Exercise precision as you pour the melted wax into the molds, creating the foundation for the unique shapes and designs of your candles.</li>
+                    <li class="list-group-item"><b>Cooling:</b> Transfer the molds to a cooling rack, allowing the candles to cool and solidify evenly, a crucial step for the final product's structural integrity.</li>
+                    <li class="list-group-item"><b>Trimming Wicks:</b> Employ a wick trimmer to cut the wicks to the desired length, ensuring an optimal burn and a polished aesthetic.</li>
+                    <li class="list-group-item"><b>Removing Candles:</b> Gently release the candles from the molds, unveiling the fruits of your labor.</li>
+                    <li class="list-group-item"><b>Quality Check:</b> Thoroughly inspect each candle, checking for any imperfections or defects. This step ensures that your creations meet the highest standards.</li>
+                  </ol>
+                </div><!-- End Tab 2 Content -->
+      
+              </div>
+      
+            </div>
+      
+          </div>
+      
+        </div>
+      </div>
+    </div>
+      </section>
+      
+      
             
       <!-- ===== end machinery===== -->
 
@@ -1187,46 +1361,53 @@ display: none;
 
 
         <!-- =====profit  ===== -->
-        <section id="profit" class="features">
+        <section id="profit" class="features" style="background-color: #f8f9fa; padding: 80px 0;">
           <div class="container">
-            <h2>Net Profit and Time to Recoup</h2>
-            <form id="calculationForm">
-              <div class="form-group">
-                <p><strong>Assumptions:</strong></p>
-  <ul>
-    <li>Initial Investment: ₹36,050 to ₹117,100</li>
-    <li>Net Profit per Candle: ₹7.50</li>
-    <li>Net Amount of Candles Made and Sold per Day: 300</li>
-  </ul>
-                <label for="initialInvestmentRange">Initial Investment Range:</label>
-                <input type="text" class="form-control" id="initialInvestmentRange" placeholder="₹36,050 to ₹117,100" value="₹36,050 to ₹117,100">
+            <div class="row">
+              <div class="col-lg-12">
+                <form id="calculationForm">
+                  <h2>Net Profit and Time to Recoup</h2>
+                  <div class="form-group">
+                    <p><strong>Assumptions:</strong></p>
+                    <ul>
+                      <li>Initial Investment: ₹36,050 to ₹117,100</li>
+                      <li>Net Profit per Candle: ₹7.50</li>
+                      <li>Net Amount of Candles Made and Sold per Day: 300</li>
+                    </ul>
+                  </div>
+                  <div class="form-group">
+                    <label for="initialInvestmentRange">Initial Investment Range:</label>
+                    <input type="text" class="form-control" id="initialInvestmentRange" placeholder="₹36,050 to ₹117,100" value="₹36,050 to ₹117,100">
+                  </div>
+                  <div class="form-group">
+                    <label for="netProfitPerCandle">Net Profit per Candle (in ₹):</label>
+                    <input type="text" class="form-control" id="netProfitPerCandle" placeholder="7.50" value="7.50">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Calculate</button>
+                </form>
               </div>
-              <div class="form-group">
-                <label for="netProfitPerCandle">Net Profit per Candle (in ₹):</label>
-                <input type="text" class="form-control" id="netProfitPerCandle" placeholder="7.50" value="7.50">
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div id="result">
+                  <p><strong>Calculations:</strong></p>
+                  <ol>
+                    <li><strong>Daily Net Profit:</strong>
+                      <ul>
+                        <li id="dailyProfit">-</li>
+                      </ul>
+                    </li>
+                    <li><strong>Time to Recoup Investment:</strong>
+                      <ul>
+                        <li id="timeToRecoup">-</li>
+                      </ul>
+                    </li>
+                  </ol>
+                  <p>These calculations provide an estimate of the time required to recoup the initial investment based on the assumed daily net profit from selling 300 candles. Keep in mind that these figures are indicative, and actual results may vary based on market conditions, production efficiency, and other factors. Regular monitoring and adjustments to your business strategy will help ensure accurate projections.</p>
+                </div>
               </div>
-              <button type="submit" class="btn btn-primary">Calculate</button>
-            </form>
-            
-            <div id="result">
-              <p><strong>Calculations:</strong></p>
-              <ol>
-                <li><strong>Daily Net Profit:</strong></li>
-                <ul>
-                  <li id="dailyProfit"></li>
-                </ul>
-                <li><strong>Time to Recoup Investment:</strong></li>
-                <ul>
-                  <li id="timeToRecoup"></li>
-                </ul>
-              </ol>
-              <p>These calculations provide an estimate of the time required to recoup the initial investment based on the assumed daily net profit from selling 300 candles. Keep in mind that these figures are indicative, and actual results may vary based on market conditions, production efficiency, and other factors. Regular monitoring and adjustments to your business strategy will help ensure accurate projections.</p>
             </div>
           </div>
-          
-
-
-
         </section>
 
 
@@ -1248,11 +1429,11 @@ display: none;
             <div class="row justify-content-center">
               <div class="col-lg-10">
                 <div class="text-center mb-5">
-                  <h2 class="section-title">Raw Material and Supply Chain Managemen</h2>
+                  <h2 class="section-title">Raw Material and Supply Chain Management</h2>
                   <p class="section-description"></p>
                 </div>
                 <div class="row">
-                  <div class="col-md-6"> <!-- Adjusted column width to col-md-6 -->
+                  <div class="col-md-12"> <!-- Adjusted column width to col-md-6 -->
                     <div class="accordion" id="faqAccordion">
                       <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
                         <h3 class="accordion-header">
@@ -1276,7 +1457,7 @@ display: none;
                       </div><!-- # Faq item-->
                     </div>
                   </div>
-                  <div class="col-md-6"> <!-- Adjusted column width to col-md-6 -->
+                  <div class="col-md-12"> <!-- Adjusted column width to col-md-6 -->
                     <div class="accordion" id="faqAccordion">
                       <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
                         <h3 class="accordion-header">
@@ -1320,7 +1501,7 @@ display: none;
           <section id="tech" class="features">
             <div class="container">
               <div class="text-center mb-5">
-                <h2 class="section-title">technology integration and maximum production</h2>
+                <h2 class="section-title">Technology Intigration</h2>
                 <p class="section-description"></p>
               </div>
               
@@ -1472,14 +1653,9 @@ display: none;
                       <img src="./images/member1.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="member-info">
-                      <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                      </div>
+                      
                       <h4>Rohan R</h4>
-                      <span></span>
+                      
                     </div>
                   </div>
                 </div><!-- End Team Member -->
@@ -1502,20 +1678,15 @@ display: none;
                   </div>
                 </div><!-- End Team Member -->
       
-                <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
+                <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
                   <div class="team-member">
                     <div class="member-img">
-                      <img src="./images/thomas.png" class="img-fluid" alt="">
+                      <img src="./images/thomas.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="member-info">
-                      <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                      </div>
+                      
                       <h4>Thomas Gomes</h4>
-                      <span>Chutia</span>
+                      
                     </div>
                   </div>
                 </div><!-- End Team Member -->
@@ -1599,6 +1770,10 @@ display: none;
     <script src="./chatbot.js"></script>
     <script src="./mainpage.js"></script>
     <script src="./detail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 
 </body>
