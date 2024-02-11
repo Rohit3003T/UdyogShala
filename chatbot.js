@@ -1,6 +1,6 @@
 const responses = {
   "hi": "Hello!",
-  "live call with mentor after some time":"your session is confirmed we contact through your mail",
+  "confirm meeting":"your session is confirmed we contact through your mail",
   "cancel live call request":"request cancelled",
   "how i can get finance for buisness":"http://127.0.0.1:5500/main.html#finance-faq",
   "how we can trust you":"We are providing a path which you have to follow by using all data we have collected from your nearby",
@@ -468,10 +468,10 @@ function handleUserInput(input) {
       const suggestionContainer = document.getElementById('suggestion-container');
       suggestionContainer.innerHTML = ""; // Clear previous suggestions
       const spanAfter = document.createElement('span');
-      spanAfter.textContent = "after some time";
+      spanAfter.textContent = "confirm meeting";
       spanAfter.classList.add('suggestion-item');
       spanAfter.addEventListener('click', () => {
-        handleUserInput("live call with mentor after some time"); // Handle user input when "After some time" is clicked
+        handleUserInput("confirm meeting"); // Handle user input when "After some time" is clicked
       });
       const spanCancel = document.createElement('span');
       spanCancel.textContent = "cancel live call request";
