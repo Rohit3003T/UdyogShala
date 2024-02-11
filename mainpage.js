@@ -22,10 +22,9 @@ document.getElementById('calculationForm').addEventListener('submit', function(e
 
 
   var rawMaterialsData = [
-    { name: "Wax", source: "Local suppliers or online distributors", example: "Check online platforms like Alibaba or Amazon for bulk wax purchases" },
-    { name: "Fragrance Oils", source: "Local fragrance oil suppliers or essential oil distributors", example: "Explore fragrance oil options on websites like Bramble Berry or Natures Garden" },
-    { name: "Wicks", source: "Wick manufacturers, local craft stores, or online suppliers", example: "Purchase wicks in bulk from online stores like CandleScience or Wooden Wick Co." },
-    { name: "Dyes and Pigments", source: "Specialty stores or online retailers", example: "Order candle dyes and pigments from suppliers like Rustic Escentuals or Candlewic" },
+    { name: "Wax", source: "Local suppliers in Bengaluru or online distributors", example: "Check online platforms like Alibaba or Amazon for bulk wax purchases. You can also explore local suppliers on JustDial: <a href='https://www.justdial.com/Bangalore/Wax-Dealers/nct-10534061' target='_blank'>Wax Dealers in Bengaluru</a>" },    { name: "Fragrance Oils", source: "Local fragrance oil suppliers or essential oil distributors", example: "Explore fragrance oil options on websites like Bramble Berry or Natures Garden" },
+    { name: "Wicks", source: "Wick manufacturers, local craft stores, or online suppliers", example: "Purchase wicks in bulk from online stores like CandleScience or Wooden Wick Co. You can also find wicks on platforms like IndiaMart: <a href='https://dir.indiamart.com/bengaluru/candle-wicks.html' target='_blank'>Candle Wicks on IndiaMart</a>" },    { name: "Dyes and Pigments", source: "Specialty stores or online retailers", example: "Order candle dyes and pigments from suppliers like Rustic Escentuals or Candlewic" },
+    { name: "Dyes and Pigments", source: "Specialty stores or online retailers", example: "Order candle dyes and pigments from suppliers like Rustic Escentuals or Candlewic. You can also explore options on JustDial: <a href='https://www.justdial.com/Bangalore/Pigment-Colour-Dealers/nct-10366345' target='_blank'>Pigment Colour Dealers in Bengaluru</a>" },
     { name: "Molds", source: "Mold manufacturers, local craft stores, or online platforms", example: "Find a variety of candle molds on websites like Etsy or Alibaba" },
     { name: "Packaging Materials", source: "Packaging material suppliers or local markets", example: "Buy packaging materials in bulk from online distributors such as Uline or Packlane" },
     { name: "Labels and Tags", source: "Printing services or specialized label manufacturers", example: "Design and order custom labels from online platforms like Sticker Mule or Avery" },
@@ -93,3 +92,4 @@ document.getElementById('calculationForm').addEventListener('submit', function(e
     var sentMessage = document.getElementById('sent-message');
     sentMessage.style.display = 'block'; // Display the "Your message has been sent" message
   }
+  
